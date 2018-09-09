@@ -1,0 +1,67 @@
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <mat-card>
+                    <a href="src/assets/images/male.png"><img src="src/assets/images/male.png" class="img-fluid rounded-circle" id="mk"></a>
+                <input type="file" class="file-btn"><div class="file-text">Choose another Photo</div>
+              </mat-card>
+          </div>
+          <div class="col-md-6">
+<mat-tab-group>
+    <mat-tab label="Account"> 
+        <mat-form-field>
+         <input matInput placeholder="Email"  type="email" value="Kolade@gmail.com" disabled><i class="fa fa-envelope"></i>
+       </mat-form-field><br/>
+
+         <mat-form-field>
+                 <input matInput placeholder="Username" type="text" value="Alajah" disabled><i class="fa fa-user"></i>
+         </mat-form-field><br>
+
+
+         <mat-form-field>
+                 <input matInput placeholder="New Password" [type]="hide ? 'password' : 'text'"  disabled value="welcome"><i class="fa fa-key"></i>
+                 <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+             </mat-form-field><br>
+
+     </mat-tab>
+    <mat-tab label="Profile">
+            <mat-form-field>
+                    <input matInput placeholder="Firstname" type="text" value="Promise" disabled><i class="glyphicon glyphicon-name"></i>
+                    </mat-form-field><br/>
+    
+                    <mat-form-field>
+                            <input matInput placeholder="Lastname" type="text" value="Delight" disabled>
+                    </mat-form-field><br/>
+    
+                    <mat-form-field>
+                        <input matInput placeholder="Status" type="text" value="The Lord is Good" disabled><i class="fa fa-pencil"></i>
+                    </mat-form-field><br/>
+    
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field><br>
+                          
+     </mat-tab>
+     <mat-tab label="Contact">
+            <mat-form-field>
+                    <input matInput placeholder="Phone Number" type="text" value="09048748923" disabled><i class="fa fa-phone"></i>
+                </mat-form-field><br/>
+
+     </mat-tab>
+     <button class="btn btn-success btn-lg fa fa-edit"> Edit </button>
+                 <button class="btn btn-info btn-lg fa fa-save"> Save Changes </button>
+   
+  </mat-tab-group>
+
+
+
+               
+               
+                 
+                
+
+
+
+                 

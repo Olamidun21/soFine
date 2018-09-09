@@ -1,0 +1,27 @@
+.popular
+{
+    width:33%;
+    padding-top: 5px;
+    font-size: 45px;
+    color:#2AB967;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E8DB5B; 
+    margin-left: 32%;
+    margin-bottom: 3%;
+}
+/* #am{
+    animation-name: konga;
+    animation-duration:30s;
+    animation-delay: 8s;
+    background-image: url(src/images/man.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes konga{
+    25%{background-image: url(src/images/man1.jpg);}
+    50%{background-image: url(src/images/cl1.jpg);}
+    75%{background-image: url(src/images/cl2.jpg);}
+    100%{background-image: url(src/images/p.jpg);}
+   } */

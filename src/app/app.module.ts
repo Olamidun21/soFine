@@ -87,8 +87,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule,
+  MatFormFieldModule, 
 } from '@angular/material';
+import {BehaviorSubject} from 'rxjs';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -103,12 +105,22 @@ import { GuestDashComponent } from './guest-nav/guest-dash/guest-dash.component'
 import { AppRoutingModule } from './/app-routing.module';
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { LoginComponent } from './join-comp/login/login.component';
+import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
+import { ClientComponent } from './homepages/tailor-view/client/client.component';
+import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
 import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
 import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
+import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
+
+import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
+import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
+import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -124,9 +136,18 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    ProfileComponent,
+    ClientComponent,
+    DetailsComponent,
     MyServicesComponent,
     ManageComponent,
     ManageJobComponent,
+    EarningComponent,
+    DashboardSupportComponent,
+    SidenavComponent
+    NotificationComponent,
+    DashboardComponent,
+    DashboardhomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -209,10 +230,13 @@ import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-jo
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule
+  MatFormFieldModule, 
   ],
   entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
+export class AppModule { }
 export class AppModule { };
+
+platformBrowserDynamic().bootstrapModule(AppModule);

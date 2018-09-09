@@ -1,3 +1,88 @@
-<p>
-  join-comp works!
-</p>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BETA</title>
+    
+    
+    <link rel='stylesheet' href='httpsb://fonts.googleapis.com/css?family=Open+Sans:600'>
+  
+  
+  </head>
+  <body>
+    
+     
+   
+  
+  
+  
+  <h3 style="text-align:center; margin-top:-20px;background-color:#8E0438;color:white;font-size:40px;padding-top:30px;height:100px;">BETA</h3>
+  
+      <div class="login-wrap" style="margin-top:40px;">
+          <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked ><label for="tab-1" class="tab" style="text-align:center;">Log In </label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab" style="float:right">Sign Up</label>
+            <div class="login-form">  
+              <!-- login own -->
+              <form  (submit)="loginUser($event)" class="sign-in-htm" style="margin-top:50px;">
+                <div class="group">
+                  
+                  <input id="user" type="email" class="input" placeholder="Email" required>
+                </div>
+                <div class="group">
+                  
+                  <input id="pass" type="password" class="input" data-type="password" placeholder="Password" required>
+                </div>
+                <div class="group">
+                  <input id="check" type="checkbox" class="check" checked>
+                  <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div class="group">
+                  <input type="submit" class="button" value="Log In">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                  <a href="#forgot">Forgot Password?</a>
+                </div>  
+              </form>
+              <!-- sign up own -->
+              <form  (submit)="loginUse($event)" class="sign-up-htm" style="margin-top:50px;">
+                <div class="group">
+                  
+                  <input id="user" type="text" class="input" placeholder="Firstname">
+                </div>
+                <div class="group">
+                  
+                  <input id="pass" type="text" class="input" placeholder="Lastname">
+                </div>
+                <div class="group">
+                  <input id="pass" type="text" class="input" placeholder="Phone Number">
+                </div>
+                <div class="group">
+                  
+                  <input id="pass" type="email" class="input" placeholder="Email">
+                </div>
+                <div class="group">
+                  
+                  <input id="pass" type="password" class="input" data-type="password" placeholder="Password">
+                </div>
+                <div class="group">
+                  
+                  <input id="pass" type="text" class="input"  placeholder="Religion">
+                </div>
+                <div class="group">
+                  <input type="submit" class="button" value="Sign Up">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                  <label for="tab-1" style="color:white;"><h3 style="color:white;margin-top:-100px;">Already Member?</h3></label>
+                </div>
+        
+              </form>
+            </div>
+          </div>
+        </div>
+          
+          
+        
+        </body>

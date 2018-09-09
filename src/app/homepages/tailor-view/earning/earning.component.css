@@ -1,0 +1,18 @@
+.container-fluid
+{margin-top:5pc}
+.text-center
+{
+    font-size: 30px;
+}
+mat-card
+{
+    background-color: #FCFBF1;
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+mat-card:hover
+{
+    background-color: #ededed;
+}
+mat-card div span{float: right}

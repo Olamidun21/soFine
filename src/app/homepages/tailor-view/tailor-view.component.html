@@ -1,3 +1,60 @@
-<p>
-  tailor-view works!
-</p>
+<mat-sidenav-container class="sidenav-container" id="sidenav-container">
+        <mat-sidenav
+        #drawer
+        class="sidenav" id="sidenav"
+        fixedInViewport="true">
+        <!-- <mat-toolbar color="">Menu</mat-toolbar> -->
+        <mat-nav-list>
+            <span><img src="src/assets/images/male.png" class="img-fluid rounded-circle"><br><b>corlard3y</b></span> <hr>    
+          <a mat-list-item  (click)="home()">Home</a>
+          <a mat-list-item href="#">Inbox</a>
+          <a mat-list-item href="#">Notifications</a>
+          <a mat-list-item href="#">Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
+          <a mat-list-item (click)="managejobs()">Manage Jobs</a>
+          <a mat-list-item (click)="clients()">My Clients</a>
+          <a mat-list-item (click)="myearnings()">My Earnings</a>
+          <a mat-list-item (click)="myservices()">My Services</a><hr>
+          <a mat-list-item (click)="myprofile()">My profile</a> 
+          
+          <a mat-list-item (click)="mysupport()">Support</a>
+          <a mat-list-item href="#">View as Client</a>
+          <a mat-list-item href="">Logout</a>    
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar class="fixed-top" color="">
+          <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <i class="fa fa-bars"></i>
+        </button>
+        <span class="beta">Beta</span>
+        </mat-toolbar>
+        <div *ngIf="tailor">
+      <app-tailor-home></app-tailor-home>     
+        </div>
+        <div *ngIf="manage">
+            <app-manage></app-manage>     
+              </div>
+        <div *ngIf="earning">
+          <app-earning></app-earning>
+        </div>
+        <div *ngIf="client">
+          <app-client></app-client>
+        </div>
+        <div *ngIf="services">
+          <app-my-services></app-my-services>
+        </div>
+        <div *ngIf="profile">
+          <app-profile></app-profile>
+        </div>
+        <div *ngIf="dashboardsupport">
+          <app-dashboard-support></app-dashboard-support>
+        </div>
+      </mat-sidenav-content>
+      </mat-sidenav-container>
+      
+         
+    

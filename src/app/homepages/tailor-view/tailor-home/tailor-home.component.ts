@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tailor-home.component.css']
 })
 export class TailorHomeComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {

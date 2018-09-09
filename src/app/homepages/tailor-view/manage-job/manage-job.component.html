@@ -1,91 +1,102 @@
-
-   <nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="nav">
-      <div class="container-fluid">
-        <a href="" class="navbar-brand" style="font-size:55px"><div>Beta</div></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#me">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<mat-toolbar class="fixed-top" color="">
+      <a href="tailor"><button
+        type="button"
+        mat-icon-button>
+        <i class="fa fa-chevron-left"></i>
+      </button></a>
+    <span class="beta">Beta</span>
+    </mat-toolbar>
+<div class="container form-search">
+    <span class="input-group">
+        <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
+     </span>
+  </div>
+<div class="container-fluid all">
+      <mat-card>
+          <div class="row">
+            <div class="col-md-6">
+                    <img src="src/assets/images/female.png"class="img-fluid rounded-circle"> 
+            </div>
+            <div class="col-md-6">
+               <span class="full-cli"><b>Client Details</b></span>
+               <div>Fullname<span>Delight delight</span></div>
+               <hr>
+               <div>Username<span>Delight99</span></div>
+               <hr>
+               <div>Email<span>delightolarinde@gmail.com</span></div>
+               <hr>
+               <div>Phone Number<span>08012345678</span></div>
+               <hr>
+               <div>Address<span>Pako street,Illy</span></div>
+               <hr>
+            </div>       
+           </div>      
+      </mat-card>
       </div>
-    </nav>
-    <br><br>
-<div>
-    <img src="assets/images/f.jpg" class="st"/>
-    <div>
-<p>Name: Delight</p>
-<p>Address:</p>
-<p>Phone: 08134095437</p>
-<p>Email: delightolarinde@gmail.com</p>
-</div>
-</div>
+
+
 <mat-tab-group color="warn">
-  <mat-tab label="Detail">
-    <img src="assets/images/f.jpg" class="st"/>
-    <div>
-        <p>Name: Delight</p>
-        <p>Address:</p>
-        <p>Phone: 08134095437</p>
-        <p>Email: delightolarinde@gmail.com</p>
-        </div>
-  </mat-tab>
+    <mat-tab label="Style">
+        <div class="card" >
+            <img class="card-img-top" src="assets/images/log4.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Job Description</h4>
+              <p class="card-text">Native</p>
+              <button mat-button>Job Over</button>
+            </div>
+          </div>
+       
+      </mat-tab>
   <mat-tab label="Measurement"> 
-
-        <p>type:Gown</p>
-       <p>Full length - 52inches</p> 
-       <p>Back - 15inches</p> 
-       <p>Bust - 38inches</p>
-       <p>under bust - 36inches</p>
-       <p>slim waist - 28inches</p>
-       <p>half length - 40inches</p>
-       <p>hip waist - 34inches</p>
-       <p>hip line - 14inches</p>
-       <p>waist line - 14inches</p>
-       <p> sleeve - 8inches</p>
-       <p>shoulder circumference - 17inches</p>
-  
-          <!--<mat-form-field>
-             <mat-select placeholder="Measurement">
-            <mat-option *ngFor="let gender of genders" [value]="gender.value">
-              {{gender.viewValue}}
-            </mat-option>
-          </mat-select> 
-        </mat-form-field>-->
-  </mat-tab>
-  <mat-tab label="Style">
-    <img src="assets/images/log4.jpg" style="width: 200px; height:200px; "> <br>
-    <mat-form-field>
-        <textarea matInput placeholder="Description"></textarea>
-        <button mat-button>Job Over</button>
-
-  </mat-form-field>
+      <mat-list role="list">
+          <mat-list-item role="listitem">Type:Gown</mat-list-item>
+          <mat-list-item role="listitem">Full length - 52inches</mat-list-item>
+          <mat-list-item role="listitem">Back - 15inches</mat-list-item>
+          <mat-list-item role="listitem">Bust - 38inches</mat-list-item>
+          <mat-list-item role="listitem">Under bust - 36inches</mat-list-item>
+          <mat-list-item role="listitem">Slim waist - 28inches</mat-list-item>
+          <mat-list-item role="listitem">Half length - 40inches</mat-list-item>
+          <mat-list-item role="listitem">Hip waist - 34inches</mat-list-item>
+          <mat-list-item role="listitem">Hip line - 14inches</mat-list-item>
+          <mat-list-item role="listitem">Waist line - 14inches</mat-list-item>
+          <mat-list-item role="listitem">Sleeve - 8inches</mat-list-item>
+          <mat-list-item role="listitem">Shoulder circumference - 17inches</mat-list-item>
+        </mat-list>  
   </mat-tab>
   <mat-tab label="Past Jobs"> 
-    <div class="gid">
-      <img src="assets/images/log4.jpg" style="width: 200px; height:200px; ">
-          <p>
-          <input disabled value="Date:12:09:17"><br>
-          <button>Click for more details</button>
-          </p>
-        </div>
-        <div class="gid">
-            <img src="assets/images/log4.jpg" style="width: 200px; height:200px; ">
-            <p>
-                <input disabled value="Date:12:09:17"><br>
-                <button>Click for more details</button>
-                </p>
-              </div>
-              <div class="gid">
-                  <img src="assets/images/log4.jpg" style="width: 200px; height:200px; ">
-                  <p>
-                      <input disabled value="Date:12:09:17"><br>
-                      <button>Click for more details</button>
-                      </p>
+      <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+                  <div class="card" >
+                    <img class="card-img-top" src="assets/images/log4.jpg">
+                    <div class="card-body">
+                      <h4 class="card-title">Job Description</h4>
+                      <p class="card-text">Native</p>
                     </div>
-                    <div class="gid">
-                        <img src="assets/images/log4.jpg" style="width: 200px; height:200px; ">
-                        <p>
-                            <input disabled value="Date:12:09:17"><br>
-                            <button>Click for more details</button>
-                            </p>
-                          </div>
+                  </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card" >
+                  <img class="card-img-top" src="assets/images/log4.jpg">
+                  <div class="card-body">
+                    <h4 class="card-title">Job Description</h4>
+                    <p class="card-text">Native</p>
+                    
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card" >
+                  <img class="card-img-top" src="assets/images/log4.jpg">
+                  <div class="card-body">
+                    <h4 class="card-title">Job Description</h4>
+                    <p class="card-text">Native</p>
+                 
+                  </div>
+                </div>
+          </div>
+      </div>
+      </div>
+              
    </mat-tab>
 </mat-tab-group>

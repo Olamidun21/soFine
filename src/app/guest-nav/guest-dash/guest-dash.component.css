@@ -1,16 +1,21 @@
+header
+		{
+			background-image: url('/assets/images/machine.png');
+			width: 100%;
+			height: 530px;
+			background-size: cover;
+			background-position: center center;
 
-.navbar-brand 
-{
-   margin-left: 0px;
-   margin-bottom: 0%;
-}
+
+		}
 nav
 {
-    border-bottom:1px solid #2AB967;
     background-color: #2AB967;
-    color: white;
-    width:100%;
-    height: 5pc;
+}
+.navbar-brand
+{
+  font-size: 45px;
+  margin-right: 550px;padding-top: 0%
 }
 .text-imgone
 {
@@ -20,69 +25,52 @@ nav
 {
     font-size: 45px;
 }
-.navbar-collapse
-{
-    margin-left: 40%;
-}
 
-.navbar-collapse span a
+.navbar-collapse ul li a 
 {
-    font-size: 20px;
-    margin-right: 18px;
+    font-size: 18px;
     text-decoration: none;
     color:white;
 }
-.navbar-collapse span a:hover
+.navbar-collapse ul li a b:hover
 {
+
     border-bottom: 3px solid white;
-    padding-bottom: 25px;
-}
+    padding-bottom: 30px;
+} 
 #sign
 {
-    margin-right: 19px;
-    border-style: none;
-    height: 35px;
-    width: 75px;
     background-color: transparent;
     color: white;
     border: 2px solid white;
     border-radius: 20px;
-    font-size: 19px;
-    padding-bottom:10px;
+    margin-left: 20px;
+    width:100px;
 }
 #sign:hover{
     background-color: rgb(255,255,255,0.4);
     border: none;
+    color:#2AB967;
 }
 #join
 {
     margin-right: 20px;
-    border-style: none;
-    height: 35px;
-    width: 110px;
     background-color: white;
     color: #2AB967;
     border: 1px solid white;
-    border-radius: 20px;
-    font-size: 19px;
+    border-radius: 20px; 
+    margin-left: 20px;
+    width:100px;   
 }
 #join:hover
 {
     border: none;
     background-color: rgb(255,255,255,0.4);
-    color: white;
-}
-.one
-{
-    position:absolute;
-    top:120px;
-    left:850px;
-    height:350px;
+    color: #2AB967;
 }
 .segment
 {
     background-color: #2AB967;
-    height: 500px;
     color:white;
 }
 .text-img
@@ -197,7 +185,7 @@ nav
 }
 .abt-text
 {
-    padding: 2%;
+    padding: 4%;
     color:white;
     font-size:16px;
     line-height: 50px;
@@ -209,8 +197,8 @@ nav
     font-size: 25px;
     border: 2px solid #E8DB5B;
     margin-left: 2%;
-    padding-left: 5%;padding-right: 5%;
-    padding-top: 3%;padding-bottom: 3%;
+    padding-left: 4%;padding-right: 4%;
+    padding-top: 2%;padding-bottom: 2%;
     border-radius: 40px;
 }
 .abt-btn:hover
@@ -349,47 +337,289 @@ nav
     height:50px;
     padding:10px;
 }
-@media (max-width: 375px) {
-            .navbar-brand 
-        {
-            
-        }
-        .navbar-expand-sm{ 
+@media (max-width: 349px) {
+    .nav{width:320px}
+    header
+    {
+        background-image: url('/assets/images/machine375.png');
+        width: 320px;
+        height: 530px;
+        background-size: cover;
+        background-position: center center;
 
-        }
-        nav
-        {
-            border-bottom:1px solid #2AB967;
-            background-color:#2AB967;
-            color: white;
-            width:100%;
-            height: 5pc;
-        }
-        .navbar-collapse span
-        {
-             
-        }
 
-        .navbar-collapse span a
-        {
-            /* display: none; */
-            font-size: 14px;
-            border:none;
-            text-decoration: underline;
-            
-        }
-        #sign{margin-bottom: 10px;}
-        .one
-        {
-            position:absolute;
-            top:120px;
-            left:0px;;
-            height:350px;
-        }
+    }
+   .navbar-brand{margin-right: 0px}     
+    #sign{margin-bottom: 10px;margin-left: 0px}
+    #join{margin-left: 0px}
+    
+    .segment
+    {
+        background-color: #2AB967;  
+        height:100px;
+        color:white;
+    }
+    .text-img
+    {
+        position: absolute;
+        top: 500px;
+        left:50px;
+        
+     /* color: white;    */
+    }
+    .text-imgone
+    {
+        font-size: 30px;
+    }
+    .text-imgtwo
+    {
+        font-size: 25px;
+    }
+    hr
+    {
+        display: none
+    }
+    #text-one
+    {
+        /* position: absolute;
+        top: 90px;
+        left: 0px;
+        width: 170px;
+        border:none;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        border-bottom-left-radius: 0px;
+        padding:0px; */
+        display: none;
+    }
+    .text-search{display: none}
+    #btn-one
+    {
+        display: none;
+        
+        
+    }
+   
+    .txt-cen
+    {
+        width:55%;
+        padding-top: 5px;
+        font-size: 35px;
+        color:#2AB967;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #E8DB5B; 
+        margin-left: 20%;
+    }
+    .rounded-circle
+    {
+        padding: 20px;
+        opacity: 1.0;
+    }
+    #img-one
+    {
+        position: absolute;
+        top: 140px;
+        left:43px;
+        font-size: 35px;
+        color:white;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    #img-two
+    {
+        position: absolute;
+        top: 140px;
+        left:65px;
+        font-size: 35px;
+        color:white;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    #img-three
+    {
+        position: absolute;
+        top: 140px;
+        left:65px;
+        font-size: 35px;
+        color:white;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+   
+    .abt-man
+    {
+        margin-top:5%;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .colo:nth-child(2)
+    {   
+        display: none;
+    }
+    .colo:nth-child(1)
+    {
+        background-color: #2AB967;
+        padding-bottom: 5%;
+    }
+    .abt-abt
+    {
+        font-size: 45px;
+        color: white;
+        border-bottom: 3px solid #E8DB5B;
+        width:32%;
+        margin-left: 4%;
+        margin-bottom:1%;
+    }
+    .abt-text
+    {
+        padding: 2%;
+        color:white;
+        font-size:16px;
+        line-height: 50px;
+    }
+    .abt-btn
+    {
+        color:#E8DB5B;
+        background-color: transparent;
+        font-size: 25px;
+        border: 2px solid #E8DB5B;
+        margin-left: 2%;
+        padding-left: 5%;padding-right: 5%;
+        padding-top: 3%;padding-bottom: 3%;
+        border-radius: 40px;
+    }
+    
+    .popular
+    {
+        width: 63%;
+        padding-top: 5px;
+        font-size: 25px;
+        color:#2AB967;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #E8DB5B; 
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
+    .checked {
+        color: orange;
+    }
+    .card
+    {
+        margin-bottom: 3%;
+        width: 310px;
+    }
+    .card-img-top{
+        width: 300px;
+        height: 300px;
+    }
+    .foot
+    {
+        background-color: #2AB967;
+        color: white;
+    }
+    .foot-foot
+    {
+        font-size: 10px;color: #fff
+    }
+    .foot-text
+    {
+        border-style: none;
+        height: 35px;
+        background-color: #96DCB4;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: 2px;
+        font-size: 17px;
+        
+    }
+    .foot-btn
+    {
+        height: 40px;
+        width: 130px;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #2AB967;
+        box-shadow: black 1px 1px 3px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .foot-btn:hover
+    {
+        color:#2AB967;
+        box-shadow: none;
+        background-color: rgb(255,255,255,0.9);
+    }
+    .fa-apple
+    {
+        color: white;
+        padding: 5px;
+    }
+    .fa-android
+    {
+        color: white;
+        padding: 5px;
+    }
+    .fa-facebook
+{
+position: fixed;
+top: 60%;
+left:88%;
+color: white;
+background-color: #3A579A;
+width:50px;
+height:50px;
+padding: 10px;
+
+}
+.fa-google
+{
+color:white;
+position: fixed;
+top: 67%;
+left:88%;
+color: white;
+background-color:#DF4A32;
+width:50px;
+height:50px;
+padding: 10px;
+
+}
+.fa-twitter
+{
+color:white;
+position: fixed;
+top: 74%;
+width:50px;
+height:50px;
+left:88%;
+color: white;
+background-color: #00ABF0;
+width:50px;
+height:50px;
+padding:10px;
+}
+}
+@media (max-width: 375px)and (min-width:350px) {
+    header
+		{
+			background-image: url(/assets/images/machine375.png);
+			width: 100%;
+			height: 530px;
+			background-size: cover;
+			background-position: center center;
+
+
+		}
+       .navbar-brand{margin-right: 0px}     
+        #sign{margin-bottom: 10px;margin-left: 0px}
+        #join{margin-left: 0px}
+        
         .segment
         {
             background-color: #2AB967;  
-            height: 600px;
+            height:100px;
             color:white;
         }
         .text-img
@@ -634,42 +864,25 @@ nav
     padding:10px;
 }
 }
-@media (max-width:415px) and (min-width:410px) {
-    .navbar-brand 
+@media (max-width:430px) and (min-width:410px) {
+    header
     {
-        
-    }
-    .navbar-expand-sm{
+        background-image: url(/assets/images/machine375.png);
+        width: 100%;
+        height: 530px;
+        background-size: cover;
+        background-position: center center;
 
-    }
-    .navbar-collapse span a
-    {
-        /* display: none; */
-        font-size: 14px;
-        border:none;
-        text-decoration: underline;
-        
-    }
-    nav
-    {
-        border-bottom:1px solid #2AB967;
-        background-color:#2AB967;
-        color: white;
-        width:100%;
-        height: 5pc;
-    }
-    #sign{margin-bottom: 10px;}
-    .one
-    {
-        position:absolute;
-        top:120px;
-        left:0px;;
-        height:350px;
-    }
+
+    }    
+    .navbar-brand{margin-right: 0px}     
+
+    #sign{margin-bottom: 10px;margin-left: 0px}
+        #join{margin-left: 0px}
     .segment
     {
         background-color: #2AB967;
-        height: 600px;
+        height: 100px;
         color:white;
     }
     .text-img
@@ -916,47 +1129,27 @@ nav
 	
 }
 @media (max-width: 770px) and (min-width:760px) {
-	.navbar-brand 
+    header
     {
-        
-    }
-    .navbar-expand-sm{
-        
-    }
-    .navbar-collapse span a
-    {
-        /* display: none; */
-        font-size: 13px;
-        border:none;
-        width:15px;
-        
-        
-    }
-    .navbar-collapse
-    {
-        margin-left: 20%;
-    }
-    nav
-    {
-        border-bottom:1px solid #2AB967;
-        background-color:#2AB967;
-        color: white;
-        width:768px;
-        height: 5pc;
-    }
+        background-image: url('/assets/images/machine768.png');
+        width: 100%;
+        height: 530px;
+        background-size: cover;
+        background-position: center center;
 
-    #sign{margin-left: 20px;}
-    .one
-    {
-        position:absolute;
-        top:120px;
-        left:320px;;
-        height:350px;
+
     }
+    .navbar-brand{margin-right: 90px}  
+#sign:hover{
+    background-color: rgb(255,255,255,0.4);
+    border: none;
+    color:#2AB967;
+    margin-left: 20px;
+    
+}
     .segment
     {
         background-color: #2AB967;
-        height: 500px;
         color:white;
     }
     .text-img
@@ -975,31 +1168,17 @@ nav
     {
         font-size: 25px;
     }
-    hr
-    {
-        display: none
-    }
     #text-one
     {
-        /* position: absolute;
-        top: 90px;
-        left: 0px;
-        width: 170px;
-        border:none;
-        background-color: transparent;
-        border-bottom: 2px solid white;
-        border-bottom-left-radius: 0px;
-        padding:0px; */
-        display: none;
+        width:200px
     }
-    .text-search{display: none}
     #btn-one
     {
-        display: none;
-        
-        
+       position: absolute;
+       top:125px;left:200px;
+       width:100px;
     }
-   
+    .fa-search{display: none;}   
     .txt-cen
     {
         width:30%;
@@ -1203,49 +1382,22 @@ nav
 } 
 }
 @media (max-width:1030px) and (min-width:992px) {
-	.navbar-brand 
+    .navbar-brand{margin-right: 250px}     
+    header
     {
-        
-    }
-    .navbar-collapse span a
-    {
-        /* display: none; */
-        font-size: 13px;
-        border:none;
-        width:15px;
-        
-        
-    }
-    .navbar-collapse
-    {
-        margin-left: 20%;
-    }
-    .navbar-expand-sm{
-        
-        
-    }
-    nav
-    {
-        border-bottom:1px solid #2AB967;
-        background-color:#2AB967;
-        color: white;
-        width:1024px;
-        height: 5pc;
-    }
+        background-image: url('/assets/images/machine1024.png');
+        width: 100%;
+        height: 530px;
+        background-size: cover;
+        background-position: center center;
 
-    
-    #sign{margin-left: 150px;}
-    .one
-    {
-        position:absolute;
-        top:120px;
-        left:560px;;
-        height:350px;
+
     }
+   
     .segment
     {
         background-color: #2AB967;
-        height: 500px;
+        height: 0px;
         color:white;
     }
     .text-img
@@ -1264,30 +1416,15 @@ nav
     {
         font-size: 25px;
     }
-    hr
-    {
-        display: none
-    }
-    #text-one
-    {
-        /* position: absolute;
-        top: 90px;
-        left: 0px;
-        width: 170px;
-        border:none;
-        background-color: transparent;
-        border-bottom: 2px solid white;
-        border-bottom-left-radius: 0px;
-        padding:0px; */
-        display: none;
-    }
-    .text-search{display: none}
+   
     #btn-one
     {
-        display: none;
-        
+      position: absolute;
+      top:125px;
+      width:100px;       
         
     }
+    .fa-search{display: none;}       
    
     .txt-cen
     {

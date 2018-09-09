@@ -1,0 +1,29 @@
+.set{
+    background:white;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+
+    
+    overflow: hidden;
+}
+
+  .login-html p{
+      color:white;
+  }
+  .hr{
+    height:2px;
+   
+    background:whitesmoke;
+  }
+  mat-card{
+    background: #2AB967;
+    height:90px;
+    color:white;
+  
+  }
+  mat-divider{
+    background-color:wheat;
+  }
