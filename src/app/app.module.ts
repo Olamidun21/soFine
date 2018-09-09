@@ -109,6 +109,8 @@ import { SidenavComponent } from './homepages/tailor-view/sidenav/sidenav.compon
 import { RegComponent } from './join-comp/reg/reg.component';
 import { FormsModule,  } from '@angular/forms';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/inbox/inbox.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
@@ -136,6 +138,8 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
     LoginComponent,
     RegComponent,
     ForgotComponent,
+    InboxComponent,
+    SettingsComponent,
     ProfileComponent,
     ClientComponent,
     DetailsComponent,
@@ -144,7 +148,7 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
     ManageJobComponent,
     EarningComponent,
     DashboardSupportComponent,
-    SidenavComponent
+    SidenavComponent,
     NotificationComponent,
     DashboardComponent,
     DashboardhomeComponent,
@@ -236,7 +240,6 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
 export class AppModule { };
 
 platformBrowserDynamic().bootstrapModule(AppModule);

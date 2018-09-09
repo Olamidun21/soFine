@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+// import { details   } from '../mock-details';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   wait:boolean = false;
   constructor() { }
   // submit(form){

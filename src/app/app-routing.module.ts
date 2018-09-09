@@ -11,6 +11,8 @@ import { TailorViewComponent } from './homepages/tailor-view/tailor-view.compone
 import { TailorHomeComponent } from './homepages/tailor-view/tailor-home/tailor-home.component';
 import { RegComponent } from './join-comp/reg/reg.component';
 import { ForgotComponent } from './join-comp/forgot/forgot.component';
+import { InboxComponent } from './homepages/inbox/inbox.component';
+import { SettingsComponent } from './homepages/tailor-view/settings/settings.component';
 import { ProfileComponent } from './homepages/tailor-view/profile/profile.component';
 import { ClientComponent } from './homepages/tailor-view/client/client.component';
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
@@ -57,6 +59,10 @@ const appRoutes:Routes = [
      component:ForgotComponent
   },
   {
+    path:'inbox',
+     component:InboxComponent
+  },
+  {
     path:'profile',
     component: ProfileComponent
   },
@@ -80,7 +86,7 @@ const appRoutes:Routes = [
     path:'job',
     component:ManageJobComponent
   },
- 
+{
     path:'settings',
     component: SettingsComponent
   },
