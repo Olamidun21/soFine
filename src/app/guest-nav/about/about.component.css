@@ -25,6 +25,9 @@ nav
 {
     font-size: 45px;
 }
+.nav-link:hover{
+    text-decoration: n
+}
 
 .navbar-collapse ul li a 
 {

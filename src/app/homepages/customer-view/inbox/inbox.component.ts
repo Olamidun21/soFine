@@ -13,6 +13,9 @@ export interface Tile {
 })
 export class InboxComponent implements OnInit {
 
+  inbox= true;
+  chat= false;
+
   tabLoadTimes: Date[] = [];
   constructor() { }
   tiles: Tile[] = [
@@ -31,6 +34,17 @@ export class InboxComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  message= function(){
+    this.chat= false;
+    this.inbox= true;
+
+  }
+
+  chatbox= function(){
+    this.chat= true;
+    this.inbox= false;
   }
 
 }

@@ -1,4 +1,4 @@
-export class Detail {
+export class Details {
     fullname : string;
     description : string;
     language : string;

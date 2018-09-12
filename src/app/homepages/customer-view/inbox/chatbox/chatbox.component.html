@@ -1,0 +1,82 @@
+<div class="container">
+  <mat-card >
+              <div class="container form-search">
+                  <span class="input-group">
+                      <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search form-control"></span>
+                      <button mat-icon-button [matMenuTriggerFor]="menu" class="nav justify-content-end">
+                              <mat-icon>more_vert</mat-icon>
+                          </button>
+                  </span>
+                  
+              </div>
+          <mat-menu #menu="matMenu" >
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Starred messages</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Notification</span>
+      </button>
+    </mat-menu>
+  </mat-card>
+    <mat-divider></mat-divider>
+    <mat-card class="dashboard-card" rowspan=1>
+      <div class="chat friend">
+      <div class="user-photo" ><img src="src/images/man.png"></div>
+      <div class="msg-head">K. money fufu</div>
+      <i class="fa fa-envelope-o" style="font-size:24px"></i>
+      </div>
+      <mat-divider></mat-divider> 
+        <mat-card-content class="dashboard-card-content">
+            <div class="chatlogs">
+  
+                <div class="chat friend">
+                    <div class="user-photo" ><img src="src/images/man.png"></div>
+                    <p class="chat-message-chat">what's up fufu......!!!</p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo" ><img src="img/man.png"></div>
+                    <p class="chat-message-chat">what's up fufu......!!!</p>
+                </div>
+                <div class="chat friend">
+                    <div class="user-photo" ><img src="src/images/man.png"></div>
+                    <p class="chat-message-chat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="chat friend">
+                    <div class="user-photo" ><img src="src/images/man.png"></div>
+                    <p class="chat-message-chat">what's up fufu......!!!</p>
+                </div>
+                <div class="chat self">
+                    <div class="user-photo" ><img src="img/man.png"></div>
+                    <p class="chat-message-chat">what's up fufu......!!!</p>
+                </div>
+                <div class="chat friend">
+                    <div class="user-photo" ><img src="src/images/man.png"></div>
+                    <p class="chat-message-chat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="chat-form">
+                  <textarea></textarea>
+                  <button>Send</button>
+                </div>
+        </mat-card-content>
+    </mat-card>
+    </div>

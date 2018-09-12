@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
+
 
 @Component({
   selector: 'app-tailor-home',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tailor-home.component.css']
 })
 export class TailorHomeComponent implements OnInit {
-  
-  constructor() { }
+  take;
+  constructor(private serve:DatasetService) { }
 
   ngOnInit() {
+    
   }
 
 }
