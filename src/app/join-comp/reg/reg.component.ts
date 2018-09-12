@@ -11,6 +11,10 @@ export class RegComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   isEditable = false;
+  first ='';
+  last='';
+  countrt=''; 
+  state=''; 
   constructor() { }
 
   ngOnInit() {

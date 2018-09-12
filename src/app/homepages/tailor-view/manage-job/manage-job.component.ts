@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
 export interface gender {
   value: string;
   viewValue: string;
@@ -9,11 +11,14 @@ export interface gender {
   styleUrls: ['./manage-job.component.css']
 })
 export class ManageJobComponent implements OnInit {
+
   genders:gender[] = [
     {value: 'male', viewValue: 'Male'},
     {value: 'female', viewValue: 'Female'}
   ];
-  constructor() { }
+  constructor(private serve : DatasetService, private router : Router) { 
+    
+  }
 
   ngOnInit() {
   }
