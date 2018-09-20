@@ -5,8 +5,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#me">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse offset-4" id="me">
-               
+        <div class="collapse navbar-collapse offset-4" id="me"> 
         </div>
     </div>
   </nav>
@@ -24,19 +23,27 @@
   </div> -->
 
 <div class="container" style="margin-top:130px">
-  <mat-spinner style="top:30%;left:45%;position:absolute" *ngIf="wait"></mat-spinner>
-  <form #myform="ngForm" (ngSubmit)="submit(myform)">
+  <mat-card>
+      <mat-spinner style="top:30%;left:45%;position:absolute" *ngIf="wait"></mat-spinner>
+      <form #myform="ngForm" (ngSubmit)="submit(myform)">
+    
+          <mat-form-field>
+              <input matInput placeholder="Email" type="email" required name="email"[(ngModel)]="email">
+            </mat-form-field>&nbsp;
+      
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
+          <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+        </mat-form-field><br>
+      
+        <button (click)="processLogin()" mat-raised-button type="submit" color="accent" [disabled]="!myform.form.valid" style="width:70%"><a routerLink='/dashboard'>submit</a></button><br>
+          <a href="forgot" style="font-size: 15px;font-weight: bold;color:#2AB967;text-decoration:none;">Forgot password?</a>
+      </form>
+    </mat-card>
 
-      <mat-form-field>
-          <input matInput placeholder="Email" type="email" required name="email"[(ngModel)]="email">
-        </mat-form-field>&nbsp;
-  
-    <mat-form-field>
-      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
-      <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
-    </mat-form-field><br>
-  
-    <button (click)="processLogin()" mat-raised-button type="submit" color="accent" [disabled]="!myform.form.valid" style="width:70%" >submit</button><br>
-      <a href="forgot" style="font-size: 15px;font-weight: bold;color:#2AB967;text-decoration:none;">Forgot password?</a>
-  </form>
    </div>
+   <router-outlet></router-outlet>
+
+   <!-- <div *ngFor = "data of datas">
+      <p>{{ data[i].email }} and {{ data[i].password }}</p>
+        </div> -->

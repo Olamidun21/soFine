@@ -11,7 +11,5 @@ export class GuestDashComponent implements OnInit {
 
   ngOnInit() {
   }
-show(){
-  alert(innerWidth);
-}
+
 }

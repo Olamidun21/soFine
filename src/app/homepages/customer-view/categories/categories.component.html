@@ -1,0 +1,101 @@
+<div  *ngIf="categories" class="container">
+  <div class="row">
+    <div class="header header1">
+      <span><a (click)="menu('dashboard')">Home</a> > </span><span><a (click)="menu('categories')">Categories</a></span>
+      <br /><br />
+      <h1 class="text-center">Categories</h1>
+      <h6 class="text-center">Need to get something done? Take a look at these categories.</h6>
+    </div>
+  </div>
+
+  <div class="row r2">
+    <!-- <div class="card-deck"> -->
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/d.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Designer</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/t.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Tailor</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/c.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Customizer</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/c1.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Headgear</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/e.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Equipments</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/a.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Accessories</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a (click)="menu('fabrics')">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/f.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text">Fabrics</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="">
+          <div class="card mx-auto text-white text-center">
+            <img src="src/assets/images/categories/b.jpg" alt="" class="card-img-top image-fluid">
+            <div class="card-body">
+              <p class="card-text" style="font-size:19px;">Bags &  Shoes</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>
+<div *ngIf="fabrics">
+  <app-fabrics></app-fabrics>     
+</div>
+<div *ngIf="dashboard">
+    <app-dashboardhome></app-dashboardhome>     
+</div>

@@ -12,15 +12,44 @@
   </nav>
 
   
-  <div class="container" style="margin-top:130px">
+    
+    <div class="container" style="margin-top:130px">
+        <mat-card>
       <button mat-raised-button (click)="isEditable = !isEditable">
           {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
         </button>
         <mat-horizontal-stepper linear #stepper>
             <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
     <form>
-        <ng-template matStepLabel>Personal Info</ng-template>
+        
+        <ng-template matStepLabel>Create An Account</ng-template>
         <mat-form-field>
+          <input matInput placeholder="Display Name" required name="displayname"[(ngModel)]="displayname">
+        </mat-form-field><br>
+        <mat-form-field>
+            <input matInput placeholder="Email" required name="email"[(ngModel)]="email">
+          </mat-form-field><br>
+        <mat-form-field>
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
+            <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+          </mat-form-field><br>
+      
+          <!-- <mat-form-field>
+              <input matInput placeholder="Region"  required name="region"[(ngModel)]="region">
+            </mat-form-field><br>
+            <mat-form-field>
+                <input matInput placeholder="Address"  required name="address"[(ngModel)]="address">
+              </mat-form-field><br> -->
+
+          <div>
+              <button mat-raised-button matStepperNext>Next</button>
+            </div>
+    </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+      <form>
+          <ng-template matStepLabel>Personal Info</ng-template>
+        <mat-form-field >
             <input matInput placeholder="First name"  required name="frist"[(ngModel)]="frist">
           </mat-form-field><br>
           <mat-form-field>
@@ -32,35 +61,9 @@
               <mat-form-field>
                   <input matInput placeholder="State"  required name="state"[(ngModel)]="state">
                 </mat-form-field>
-
           <div>
-              <button mat-button matStepperNext>Next</button>
-            </div>
-    </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
-      <form>
-          <ng-template matStepLabel>Create An Account</ng-template>
-          <mat-form-field>
-            <input matInput placeholder="Display Name" required name="displayname"[(ngModel)]="displayname">
-          </mat-form-field><br>
-          <mat-form-field>
-              <input matInput placeholder="Email" required name="email"[(ngModel)]="email">
-            </mat-form-field><br>
-          <mat-form-field>
-              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
-              <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
-            </mat-form-field><br>
-        
-            <mat-form-field>
-                <input matInput placeholder="Region"  required name="region"[(ngModel)]="region">
-              </mat-form-field><br>
-              <mat-form-field>
-                  <input matInput placeholder="Address"  required name="address"[(ngModel)]="address">
-                </mat-form-field><br>
-          <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+            <button mat-raised-button matStepperPrevious>Back</button>&nbsp;&nbsp;
+            <button mat-raised-button matStepperNext (click)="firstSubmit()" >Next</button>
           </div>
       </form>
     </mat-step>
@@ -69,9 +72,13 @@
         <ng-template matStepLabel>Done</ng-template>
         You are now done.
         <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button (click)="stepper.reset()">Reset</button>
+          <button mat-raised-button matStepperPrevious>Back</button>&nbsp;
+          <button mat-raised-button (click)="stepper.Submit()">submit</button>
         </div>
       </mat-step>
   </mat-horizontal-stepper>
+</mat-card>
   </div>
+
+  
+ 

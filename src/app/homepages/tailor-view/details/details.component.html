@@ -1,78 +1,83 @@
-<mat-toolbar class="fixed-top" color="">
-    <a href="tailor"><button
-      type="button"
-      mat-icon-button>
-      <i class="fa fa-chevron-left"></i>
-    </button></a>
-  <span class="beta">Beta</span>
-  </mat-toolbar>
-<div class="container form-search">
-    <span class="input-group">
-        <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
-     </span>
-  </div>
-<div class="container all">
-      <mat-card>
-          <div class="row">
-            <div class="col-md-6">
-                    <img src="src/assets/images/male.png"class="img-fluid rounded-circle"> 
-            </div>
-            <div class="col-md-6">
-               <span class="full-cli"><b>Client Details</b></span>
-               <div>Fullname<span>Delight delight</span></div>
-               <hr>
-               <div>Username<span>Delight99</span></div>
-               <hr>
-               <div>Email<span>Delight@gmail.com</span></div>
-               <hr>
-               <div>Phone Number<span>08012345678</span></div>
-               <hr>
-               <div>Address<span>Pako street,Illy</span></div>
-               <hr>
-            </div>       
-           </div>      
-      </mat-card>
+<div *ngIf="detailall">
+    <div class="container form-search">
+        <span class="input-group">
+            <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
+         </span>
       </div>
-<mat-tab-group color="accent">
-    <mat-tab label="All jobs"> 
-        <div class="container">
-        <div class="row">
-        <div class="col-md-4">
+      <div class="container head">
+        <span><a (click)="changeit('cli')">Clients</a></span> > <span><a >Details</a></span>
+      </div>
+      <div class="container all">
+          <mat-card>
+              <div class="row">
+                <div class="col-md-6">
+                        <img src="src/assets/images/male.png"class="img-fluid rounded-circle"> 
+                </div>
+                <div class="col-md-6">
+                   <span class="full-cli"><b>Client Details</b></span>
+                   <div>Fullname<span>Delight delight</span></div>
+                   <hr>
+                   <div>Username<span>Delight99</span></div>
+                   <hr>
+                   <div>Email<span>Delight@gmail.com</span></div>
+                   <hr>
+                   <div>Phone Number<span>08012345678</span></div>
+                   <hr>
+                   <div>Address<span>Pako street,Illy</span></div>
+                   <hr>
+                </div>       
+               </div>      
+          </mat-card>
+          </div>
+      <mat-tab-group color="accent">
+        <mat-tab label="All jobs"> 
+            <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                    <div class="card" >
+                      <img class="card-img-top" src="src/assets/images/e.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title">Job Description</h4>
+                        <p class="card-text">3-piece Suit</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card" >
-                  <img class="card-img-top" src="src/assets/images/e.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Job Description</h4>
-                    <p class="card-text">3-piece Suit</p>
+                    <img class="card-img-top" src="src/assets/images/e.jpg">
+                    <div class="card-body">
+                      <h4 class="card-title">Job Description</h4>
+                      <p class="card-text">Suit Jacket</p>
+                      
+                    </div>
                   </div>
-                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" >
+                    <img class="card-img-top" src="src/assets/images/e.jpg">
+                    <div class="card-body">
+                      <h4 class="card-title">Job Description</h4>
+                      <p class="card-text">Suit Pants</p>
+                   
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div class="card" >
-                <img class="card-img-top" src="src/assets/images/e.jpg">
-                <div class="card-body">
-                  <h4 class="card-title">Job Description</h4>
-                  <p class="card-text">Suit Jacket</p>
-                  
-                </div>
-              </div>
         </div>
-        <div class="col-md-4">
-            <div class="card" >
-                <img class="card-img-top" src="src/assets/images/e.jpg">
-                <div class="card-body">
-                  <h4 class="card-title">Job Description</h4>
-                  <p class="card-text">Suit Pants</p>
-               
-                </div>
-              </div>
-        </div>
-    </div>
-    </div>
-            
-     </mat-tab>
-    <mat-tab label="Pending">
-      <div class="text-center"><b>No Pending Job</b></div>
-    </mat-tab>
-   
-  </mat-tab-group>
+                
+         </mat-tab>
+        <mat-tab label="Pending">
+          <div class="text-center"><b>No Pending Job</b></div>
+        </mat-tab>
+       
+      </mat-tab-group>
+      
+</div>
+
+
+<div *ngIf="clientall">
+    <app-client></app-client>
+</div>
+
+
 

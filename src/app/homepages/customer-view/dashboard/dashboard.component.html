@@ -88,30 +88,35 @@
     fixedInViewport="true"
     [attr.role]="isHandset ? 'dialog' : 'navigation'"
     [mode]="(isHandset | async)!.matches">
-    <mat-toolbar class="beta" style="height:30vh"><img src="src/images/male.png" class="img-fluid rounded-circle"><h2>Hi,GUEST</h2></mat-toolbar>
+    <mat-toolbar class="beta" style="height:20vh"><img src="src/images/male.png" class="img-fluid rounded-circle"><h2>Hi,GUEST</h2></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="javascript:void(0) "><mat-icon aria-label="Side nav toggle icon">home</mat-icon>HOME</a><hr>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false" class="expand">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-                 <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">label</mat-icon>CATEGORIES</a>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p><i><a href="#">Tailors</a></i></p>
+      <a mat-list-item (click)="menu('dashboard')"><mat-icon aria-label="Side nav toggle icon">home</mat-icon>HOME</a>
+      <a mat-list-item routerLink="/inbox"><mat-icon aria-label="Side nav toggle icon">mail</mat-icon>INBOX</a>
+      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">notifications_active</mat-icon>NOTIFICATION</a>
+      <a mat-list-item href="#">ONLINE STATUS <mat-slide-toggle></mat-slide-toggle></a><hr>
+      <a mat-list-item (click)="menu('categories')">
+        <!-- <mat-expansion-panel (opened)="panelOpenState = true"> -->
+                             <!-- (closed)="panelOpenState = false" class="expand"> -->
+          <!-- <mat-expansion-panel-header>
+            <mat-panel-title> -->
+                 <mat-icon aria-label="Side nav toggle icon">label</mat-icon> CATEGORIES
+            <!-- </mat-panel-title>
+          </mat-expansion-panel-header> -->
+          <!-- <p><i><a href="#">Tailors</a></i></p>
           <p><i><a href="#">Designers</a></i></p>
           <p><i><a href="#">Custmizers</a></i></p>
           <p><i><a href="#">Facilities</a></i></p>
-          <p><i><a href="#">Sellers</a></i></p>
-        </mat-expansion-panel>
-        <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">mail</mat-icon>INBOX</a><hr>
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">notifications_active</mat-icon>NOTIFICATION</a><hr>
+          <p><i><a href="#">Sellers</a></i></p> -->
+        <!-- </mat-expansion-panel> -->
+      </a><hr />
+        
+      
       <!-- <i><a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">label</mat-icon>CATEGORIES</a></i> -->
-      <mat-expansion-panel (opened)="panelOpenState = true"
+      <!-- <mat-expansion-panel (opened)="panelOpenState = true"
                              (closed)="panelOpenState = false" class="expand">
           <mat-expansion-panel-header>
             <mat-panel-title>
-                <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>TAILOR</a>
+                <mat-icon aria-label="Side nav toggle icon"></mat-icon>TAILOR
             </mat-panel-title>
           </mat-expansion-panel-header>
           <p><i><a href="#">Nature</a></i></p>
@@ -121,27 +126,34 @@
           <p><i><a href="#">Causal</a></i></p>
           <p><i><a href="#">Coperate</a></i></p>
           <p><i><a href="#">Custmizer</a></i></p>
-        </mat-expansion-panel>
+        </mat-expansion-panel><hr> -->
       <!-- <i><a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>TAILOR</a></i> -->
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>SPECAIL REQUEST</a><hr>
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">support</mat-icon>SUPPORT</a><hr>
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">swap_horizontal_circle</mat-icon>VIEW AS</a><hr>
-      <a mat-list-item href="#">ONLINE STATUS <mat-slide-toggle></mat-slide-toggle></a><hr>
+      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>SPECAIL REQUEST</a>
+      <a mat-list-item routerLink="/support"> <mat-icon aria-label="Side nav toggle icon">support</mat-icon>SUPPORT</a>
+      <a mat-list-item routerLink="/tailor"> <mat-icon aria-label="Side nav toggle icon">swap_horizontal_circle</mat-icon>VIEW AS TAILOR</a>
+      
       <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>SETTINGS</a><hr>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar class="beta">
+  <mat-sidenav-content >
+    <mat-toolbar class="beta1 fixed-top">
       <button
       type="button"
       aria-label="Toggle sidenav"
       mat-icon-button
       (click)="drawer.toggle()">
-      <mat-icon aria-label="Side nav toggle icon">input</mat-icon>
+      <i class="fa fa-bars fa-lg"></i>
+      <!-- <mat-icon aria-label="Side nav toggle icon">input</mat-icon> -->
     </button>
     <span>BETA</span>
     </mat-toolbar>
-    <app-dashboardhome></app-dashboardhome>
+    <router-outlet></router-outlet>
+    <div *ngIf="dashboard">
+        <app-dashboardhome></app-dashboardhome>     
+    </div>
+    <div *ngIf="categories">
+      <app-categories></app-categories>     
+    </div>
   </mat-sidenav-content>
   </mat-sidenav-container>
 

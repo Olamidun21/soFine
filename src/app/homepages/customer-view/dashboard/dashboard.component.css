@@ -51,23 +51,48 @@
   body{
     background-color: aqua;
   } */
+  h2{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+  }
   .beta{
-    background-color:#2AB967;
+    background-color:#F5F5F5;
     color: aliceblue;
+  }
+  .beta1{
+    background-color: #2AB967;
+    font-weight: bold;
+    color: aliceblue; 
   }
   .sidenav-container{
     height: 100%;
   }
 
   .sidenav{
-    width:240px;
+    width:290px;
     box-shadow: 3px 0 6px rgba(0,0,0,.24); 
   }
   .rounded-circle{
     height: 50px;
   }
-  
- 
+  .mat-expansion-panel:not([class*=mat-elevation-z]){
+    border: none;
+    outline: none;
+    box-shadow: none;
+   }
+   .mat-icon{
+     color: #5A5A5A;
+     margin-right: 2pc;
+   }
+   .mat-slide-toggle{
+     padding-left: 80px;
+   }
+   .mat-list-item{
+     font-size:12px;  
+     font-weight: bold;
+     font-family: 'Lucida Sans'
+    }
   /* @media (min-width: 768px){
     .sidenav{
       width:200px;

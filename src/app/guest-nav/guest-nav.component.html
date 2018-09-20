@@ -1,1 +1,53 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sidenav-container" id="sidenav-container">
+        <mat-sidenav
+        #drawer
+        class="sidenav" id="sidenav"
+        fixedInViewport="true">
+        <mat-nav-list>
+          <button class="btn-joinnow"><a href="#" routerLink="/reg">Join Beta</a></button> <hr>
+          <a mat-list-item href="#" routerLink="/login">Sign In</a>
+          <a mat-list-item (click)="side('home')">Guest Home</a>
+          <a mat-list-item (click)="side('about')">About</a>
+          <a mat-list-item (click)="side('policy')">Privacy Policy</a>
+          <a mat-list-item (click)="side('support')">Support</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar class="fixed-top" >
+          <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <i class="fa fa-bars"></i></button>
+          <span class="beta"><a href="#" id="beta-beta" (click)="side('home')">SoFine</a></span>
+          <div class="form-search">
+            <span class="input-group">
+                <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
+             </span>
+          </div>
+          <a href="#" (click)="side('about')" class="navlink link">About</a>
+          <a href="#" (click)="side('policy')" class="navlink">Policy</a>
+          <a href="#" (click)="side('support')" class="navlink">Support</a>
+          <a href="#" routerLink="/login" class="navlink">Sign In</a>
+          <a href="#" routerLink="/reg" id="joinlink"><button class="btn-join">Join</button> </a>       
+        </mat-toolbar>
+        <div *ngIf="guest">
+            <app-guest-dash></app-guest-dash>
+        </div>
+        <div *ngIf="abt">
+          <app-about></app-about>
+        </div>
+        <div *ngIf="pol">
+          <app-privacy></app-privacy>
+        </div>
+        <div *ngIf="supp">
+          <app-support></app-support>
+        </div>
+              
+       
+      </mat-sidenav-content>
+      </mat-sidenav-container>
+      
+         
+    

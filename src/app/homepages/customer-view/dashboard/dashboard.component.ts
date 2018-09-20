@@ -12,6 +12,8 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
+  dashboard = true;
+  categories = false;
  
       isHandset: Observable<BreakpointState> =this.breakpointObserver.observe(Breakpoints.Handset);
   // cards = [  
@@ -24,6 +26,11 @@ export class DashboardComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {}  
 
   ngOnInit() {
+  }
+
+  menu(take) { 
+    var result = (take=='dashboard')?this.dashboard=true:this.dashboard=false;
+    var result = (take=='categories')?this.categories=true:this.categories=false;
   }
 
 }

@@ -1,0 +1,108 @@
+.container{
+    max-width: 80% !important;
+    padding-bottom: 70px !important;
+}
+.header1{
+    border-bottom:3px solid rgb(89, 223, 89);
+    width: 100%;
+    height: 170px;
+    margin-top: 70px;
+    padding-bottom:10px !important;
+    padding: 5px;
+}
+.header1 h1{
+    font-size: 50px;
+}
+
+.header1 h6{
+    color: grey;
+}
+
+.header1 span a{
+    text-decoration: none;
+    color: grey;
+}
+
+.header1 span a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.r2{
+    margin-top: 60px;
+}
+
+.card1 {
+    max-width: 250px;
+    padding-top: 2% !important;
+    margin-bottom: 18px;
+    
+}
+
+/* .mat-card-header{
+    padding-bottom: -20px;
+} */
+
+.mat-card-title{
+    padding-top: 7% !important;
+    font-size: 17px;
+    font-weight:bold;
+}
+
+.header-image {
+    background-image: url('/assets/images/categories/denim1.jpg');
+    background-size: cover;
+    padding-bottom: -50px !important;
+}
+
+.mat-card img{
+    max-height: 200px;
+    height:180px;
+    margin-top: 0;
+}
+
+.mat-card-content h5{
+    margin-top: -8px;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 5px;
+}
+
+.mat-card-content h6{
+    font-size:14px;
+    margin-right:-20px;
+    margin-left:-10px;
+}
+
+i{
+    font-size: 32px;
+    margin-left:2%;
+    color: black;
+}
+
+i:hover{
+    color: red;
+}
+
+.mat-card button{
+margin-right: 2%;
+}
+
+.star span{
+    font-size:15px;
+    max-width: 10px;
+    display: inherit;
+
+}
+
+.mat-card-actions{
+    padding: 0;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -25px;
+}
+
+/* .mat-card-actions span.likes{
+    padding-bottom:50px !important;
+    margin-left: 10px;
+} */

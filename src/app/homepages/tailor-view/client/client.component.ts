@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent implements OnInit {
+  clientall = true;
+  detailall = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  changeit(ticket){
+    var result = (ticket == 'cli')?this.clientall=true:this.clientall=false;
+    var result = (ticket == 'det')?this.detailall=true:this.detailall=false;
   }
 
 }

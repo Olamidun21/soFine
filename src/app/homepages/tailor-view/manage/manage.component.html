@@ -1,10 +1,11 @@
-<div class="container form-search">
+<div *ngIf="manager">
+    <div class="container form-search">
         <span class="input-group">
             <span class="input-group-addon"><button class="btn-search"><i class="fa fa-search"></i></button><input type="text" placeholder="search anything..." class="search"></span>
          </span>
       </div>
 <div class="container-fluid card">
-     <a href="job">
+     <a  (click)="change('managejobs')">
          <mat-card>
             <mat-card-header>                       
                  <img src="src/assets/images/female.png" class="img-fluid rounded-circle " id="no" mat-card-avatar>        
@@ -25,4 +26,8 @@
                                     
                     </mat-card-header>
         </mat-card>
+</div>
+</div>
+<div *ngIf="managejob">
+    <app-manage-job></app-manage-job>
 </div>

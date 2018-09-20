@@ -18,7 +18,7 @@ import { ClientComponent } from './homepages/tailor-view/client/client.component
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
 import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
-import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage/manage-job/manage-job.component';
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
@@ -26,10 +26,15 @@ import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbo
 import { NotificationComponent } from './homepages/customer-view/notification/notification.component';
 import { DashboardComponent } from './homepages/customer-view/dashboard/dashboard.component';
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
+
 const appRoutes:Routes = [
   {
     path:'',
-    component: GuestDashComponent
+    component: GuestNavComponent
   },
   {
     path:'dashboard',
@@ -107,6 +112,18 @@ const appRoutes:Routes = [
   {
     path:'chat',
      component:ChatboxComponent
+  },
+  {
+    path:'categories',
+     component:CategoriesComponent
+  },
+  {
+    path:'fabrics',
+     component:FabricsComponent
+  },
+  {
+    path:'denim',
+     component:DenimComponent
   },
 ]
 

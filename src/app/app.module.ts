@@ -50,7 +50,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule,} from '@angular/forms'
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -116,7 +117,7 @@ import { ClientComponent } from './homepages/tailor-view/client/client.component
 import { DetailsComponent } from './homepages/tailor-view/details/details.component';
 import { MyServicesComponent } from './homepages/tailor-view/my-services/my-services.component';
 import { ManageComponent } from './homepages/tailor-view/manage/manage.component';
-import { ManageJobComponent } from './homepages/tailor-view/manage-job/manage-job.component';
+import { ManageJobComponent } from './homepages/tailor-view/manage/manage-job/manage-job.component';
 import { EarningComponent } from './homepages/tailor-view/earning/earning.component';
 import { DashboardSupportComponent } from './homepages/tailor-view/dashboard-support/dashboard-support.component';
 
@@ -125,6 +126,10 @@ import { DashboardComponent } from './homepages/customer-view/dashboard/dashboar
 import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dashboardhome/dashboardhome.component';
 import { ChatboxComponent } from './homepages/customer-view/inbox/chatbox/chatbox.component';
 import { DatasetService } from './dataset.service';
+
+import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
+import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
+import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -155,6 +160,9 @@ import { DatasetService } from './dataset.service';
     DashboardComponent,
     DashboardhomeComponent,
     ChatboxComponent,
+    CategoriesComponent,
+    FabricsComponent,
+    DenimComponent,
   ],
   imports: [
     BrowserModule,
@@ -196,7 +204,11 @@ import { DatasetService } from './dataset.service';
   MatTooltipModule,
   MatTreeModule,
   MatFormFieldModule,
-  FormsModule
+  FormsModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -237,7 +249,11 @@ import { DatasetService } from './dataset.service';
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
-  MatFormFieldModule, 
+  MatFormFieldModule,
+  BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
+  HttpClientModule,
   ],
   entryComponents: [],
   providers: [DatasetService],

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
+  clientall = false;
+  detailall = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  changeit(ticket){
+    var result = (ticket == 'cli')?this.clientall=true:this.clientall=false;
+    var result = (ticket == 'det')?this.detailall=true:this.detailall=false;
   }
 
 }

@@ -1,104 +1,272 @@
+mat-toolbar{background-color: transparent;height: 4pc}
+mat-toolbar a{text-decoration: none;color:white}
+.beta{color: white;font-size: 32px;font-family: Georgia, 'Times New Roman', Times, serif;margin-right: 2pc}
+.form-search{display: none}
+@media(min-width:1050px) and (max-width:2500px){
+    .side-btn{display: none}
+    .footer-500{display: none}
+    .search-all{display: none}
+}
+.input-group
+{
+    height: 35px;background-color: transparent;border:none
+}
+.input-group-addon
+{
+    height: 35px;background-color: transparent;border:none
+}
+.search
+ {
+     width:20pc;
+     height:35px;
+     border-style: none;
+     padding-left: 5px;
+     border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+     border: 1px solid #EAEAEA;border-left: none
+ }
+ .btn-search
+ {
+    width:25px;
+    height: 35px;
+    border-style: none;
+    padding: 2px;
+    background-color: white;
+    border-top-left-radius: 25px;border-bottom-left-radius: 25px;padding-left: 5px;
+    border: 1px solid #EAEAEA;border-right: none
+ }
+ .link
+ {
+     margin-left: 50pc
+ }
+ .fa-search{color: #555555;}
+ .navlink
+ {
+     font-size: 15px;
+     padding-left: 1pc;
+ }
+ .navlink:hover{
+     color:#2AB967
+ }
+ .btn-join
+ {
+     margin-left: 1pc;
+     height: 2pc;
+     width:4pc;
+     border-style: none;
+     background-color: transparent;
+     border:1px solid white;
+     font-size: 15px;
+     margin-bottom: 4px;
+     border-radius: 2px;
+ }
+ .btn-join:hover{
+     background-color: #2AB967;
+     border:1px solid #2AB967;
+ }
 header
 		{
-			background: url("/assets/images/machine.png");
+			background-image: url('/assets/images/alexander-andrews-290794-unsplash.jpg');
 			width: 100%;
 			height: 530px;
 			background-size: cover;
 			background-position: center center;
 
 
-		}
-nav
-{
-    background-color: #2AB967;
+        }
+
+        .text-imgone
+        {
+            font-size: 55px;
+            position: absolute;
+            top: 200px;
+            left:34.2%;
+        }
+        .text-imgtwo
+        {
+            font-size: 20px;
+            position: absolute;
+            top: 265px;
+            left:43.5%;
+        }
+        .segment
+        {
+            color:white;
+        }
+        #text-one
+        { 
+            width: 375px;
+            border-style: none;
+            height: 35px;
+            background-color: white;
+            padding: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-top: 2px;
+            font-size: 17px;
+        }
+        .search-all
+        {
+            position: absolute;
+            top: 41%;
+            left:32%;display: none;
+        }
+        .search-all .fa-search{color: white;}
+        #btn-one
+        {
+            height: 40px;
+            width: 130px;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            background-color: #2AB967;
+            box-shadow: black 1px 1px 3px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .card{background-color: #F7F7F7;}
+        .support
+        {
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+            color: #0E0E0F;    
+            margin-left: 42%;  
+        }
+        .support-two
+        {
+            font-size: 25px;
+            margin-left: 36.3%;
+        }
+        mat-card{font-size: 15px;
+        color:#555555;
+        background: white;
+        margin-top: 20px;
+        margin-left: 40px;margin-right: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 5pc;
+        }
+        footer
+        {
+            background-color: #FAFAFA;
+            border-top:1px solid #E5E5E5;
+            padding-top: 1pc;
+            padding-bottom: 2pc;
+        }
+        .foot-one
+        {
+            color:#555555;
+            margin-bottom: 1pc;
+        }
+       
+        footer span
+        {
+            color:#777777;
+            font-size:14px;
+            margin-bottom: 1pc;
+        }
+        .foot-beta
+        {
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:#555555;
+            margin-bottom: 1pc;
+        }
+        .foot-under
+        {
+            font-size: 13px;
+            color:#777777;
+        }
+        .input-group{
+            height: 30px;background-color: transparent;border: none;padding: 1pc;}
+        .input-group-addon{height: 30px;background-color: transparent;border: none;}
+        
+        .search
+        {
+            width:84vw;
+            height:40px;
+            border-style: none;
+            padding-left: 5px;
+            border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+            border: 1px solid #EAEAEA;border-left: none;
+        }
+        .btn-search
+        {
+           width:30px;
+           height: 40px;
+           border-style: none;
+           padding: 2px;
+           background-color: white;
+           border-top-left-radius: 25px;border-bottom-left-radius: 25px;padding-left: 5px;
+           border: 1px solid #EAEAEA;border-right: none
+        }
+        .fa-search{color: #555555}
+
+@media (max-width: 349px) {
+    header
+    {
+        background-image: url('/assets/images/alexander-andrews-290794-unsplash.jpg');
+        width: 100%;
+        height: 530px;
+        background-size: cover;
+        background-position: center center;
+
+
+    }
+    .search
+ {
+     width:9pc;
 }
-.navbar-brand
+.support{margin-left: 36.5%}
+    .support-two
+    {
+        width: 5pc;
+        margin-left: 0px;display: none;
+    }  
+    .side-btn{border: none;background-color: transparent}
+.side-btn i
 {
-  font-size: 45px;
-  margin-right: 550px;padding-top: 0%
-}
+    color:white;
+}   
 .text-imgone
 {
-    font-size: 55px;
+    font-size: 35px;
+    position: absolute;
+    top: 200px;
+    left:7.16%;
 }
 .text-imgtwo
 {
-    font-size: 45px;
-}
-
-.navbar-collapse ul li a 
-{
-    font-size: 18px;
-    text-decoration: none;
-    color:white;
-}
-.navbar-collapse ul li a b:hover
-{
-
-    border-bottom: 3px solid white;
-    padding-bottom: 30px;
-} 
-#sign
-{
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    margin-left: 20px;
-    width:100px;
-}
-#sign:hover{
-    background-color: rgb(255,255,255,0.4);
-    border: none;
-    color:#2AB967;
-}
-#join
-{
-    margin-right: 20px;
-    background-color: white;
-    color: #2AB967;
-    border: 1px solid white;
-    border-radius: 20px; 
-    margin-left: 20px;
-    width:100px;   
-}
-#join:hover
-{
-    border: none;
-    background-color: rgb(255,255,255,0.4);
-    color: #2AB967;
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    left:22.08%;
 }
 .segment
 {
-    background-color: #2AB967;
     color:white;
 }
-.text-img
-{
-    position: absolute;
-    top: 200px;
-    left:80px;
- /* color: white;    */
-}
 #text-one
-{
-    width: 375px;
+{ 
+    width: 75%;
     border-style: none;
-    height: 35px;
-    background-color: #96DCB4;
+    height: 30px;
+    background-color: white;
     padding: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-top: 2px;
     font-size: 17px;
 }
-#btn-one
+.search-all
 {
     position: absolute;
-    top: 186px;
-    left:375px;
-    height: 40px;
-    width: 130px;
+    top: 70%;
+    left:0%;display: none;
+}
+.search-all .fa-search{color: white;}
+#btn-one
+{
+    height: 30px;
+    width: 100px;
     border: none;
     text-transform: uppercase;
     color: white;
@@ -108,190 +276,22 @@ nav
     border-top-right-radius: 20px;
     
 }
-#btn-one:hover
+   
+ mat-card span{font-size: 25px}
+.footer-500
 {
-     color:#2AB967;
-    box-shadow: none;
-    background-color: rgb(255,255,255,0.9);
+    background-color: #FAFAFA;
+    border-top:1px solid #E5E5E5;
+    padding-top:1pc;
+    padding-bottom: 2pc;
 }
-.fa-arrow-circle-left
-{
- color:white;
-}
-.fa-arrow-circle-left:hover
-{
- color:rgb(255,255,255,0.5);
-}
-main
-    	{
-    		margin-top: 0px;
-    		height: 625px;
-    		background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-#abt{
-    font-size: 60px;
-    color: white;
-    
-}
-#bet
-{
-    font-size: 60px;
-    color: #2AB967;
-}
-#text-support
-{
-    width: 475px;
-    border-style: none;
-    height: 50px;
-    background-color: rgb(255,255,255,0.6);
-    padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-top: 2px;
-    font-size: 17px;
-}
-#btn-support
-{
-    height: 52px;
-    width: 130px;
-    border: none;
-    text-transform: uppercase;
-    color: white;
-    background-color: #2AB967;
-    /* box-shadow: black 1px 1px 3px; */
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    
-}
-.search
-{
-    position: absolute;
-    top: 700px;
-    left:400px;
-}
-#work
-{
-    font-size: 35px;
-    color: white;
-}
-@media (max-width: 349px) {
-    .nav{width:320px}
-    header
-    {
-        background: url("/assets/images/machine375.png");
-        width: 320px;
-        height: 530px;
-        background-size: cover;
-        background-position: center center;
-
-
-    }
-   .navbar-brand{margin-right: 0px}     
-    #sign{margin-bottom: 10px;margin-left: 0px}
-    #join{margin-left: 0px}
-    
-    .segment
-    {
-        background-color: #2AB967;  
-        height:100px;
-        color:white;
-    }
-    .text-img
-    {
-        position: absolute;
-        top: 500px;
-        left:50px;
-        
-     /* color: white;    */
-    }
-    .text-imgone
-    {
-        font-size: 30px;
-    }
-    .text-imgtwo
-    {
-        font-size: 25px;
-    }
-    hr
-    {
-        display: none
-    }
-    #text-one
-    {
-      
-        display: none;
-    }
-    .text-search{display: none}
-    #btn-one
-    {
-        display: none;
-        
-        
-    }
-    main
-    	{
-            height: 100vh;
-            width:100%;
-    		background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-#abt{
-    font-size: 26px;
-    color: white;
-    
-}
-#bet
-{
-    font-size: 26px;
-    color: #2AB967;
-}
-#work
-{
-    font-size: 20px;
-    color: white;
-}
-.search
-{
-    position: absolute;
-    top: 700px;
-    left:10%;
-}
-.fa-search{display: none;}
-#text-support
-{
-    width: 200px;
-    border-style: none;
-    height: 35px;
-    background-color: rgb(255,255,255,0.6);
-    padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-top: 2px;
-    font-size: 17px;
-}
-#btn-support
-{
-    height: 41px;
-    width: 75px;
-    border: none;
-    font-size: 17px;
-    text-transform: uppercase;
-    color: white;
-    background-color: #2AB967;
-    /* box-shadow: black 1px 1px 3px; */
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    
-}
-
+mat-expansion-panel{background-color: #FAFAFA}
+footer{display: none;}	
 }
 @media (max-width: 375px) and (min-width:350px) {
     header
     {
-        background: url("/assets/images/machine375.png");
+        background-image: url(/assets/images/alexander-andrews-290794-unsplash.jpg);
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -299,218 +299,176 @@ main
 
 
     }
-   .navbar-brand{margin-right: 0px}     
-    #sign{margin-bottom: 10px;margin-left: 0px}
-    #join{margin-left: 0px}
-    
-    .segment
+    .search
+     {
+         width:12pc;
+    }
+    .support{margin-left: 38.5%}
+    .support-two
     {
-        background-color: #2AB967;  
-        height:100px;
+        width: 5pc;
+        margin-left: 0px;display: none;
+    }  
+    .side-btn{border: none;background-color: transparent}
+    .side-btn i
+    {
         color:white;
-    }
-    .text-img
-    {
-        position: absolute;
-        top: 500px;
-        left:80px;
-        
-     /* color: white;    */
-    }
+    }   
     .text-imgone
     {
-        font-size: 35px;
+        font-size: 40px;
+        position: absolute;
+        top: 200px;
+        left:8.2%;
     }
     .text-imgtwo
     {
-        font-size: 25px;
+        font-size: 20px;
+        position: absolute;
+        top: 260px;
+        left:26.2%;
     }
-    hr
+    .segment
     {
-        display: none
+        color:white;
     }
     #text-one
-    {
-        display: none;
+    { 
+        width: 75%;
+        border-style: none;
+        height: 30px;
+        background-color: white;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: 2px;
+        font-size: 17px;
     }
-    .text-search{display: none}
+    .search-all
+    {
+        position: absolute;
+        top: 70%;
+        left:0%;display: none;
+    }
+    .search-all .fa-search{color: white;}
     #btn-one
     {
-        display: none;
-        
+        height: 30px;
+        width: 100px;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #2AB967;
+        box-shadow: black 1px 1px 3px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
         
     }
-main
-    	{
-            height: 100vh;
-            width:100%;
-    		background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-#abt{
-    font-size: 26px;
-    color: white;
-    
-}
-#bet
-{
-    font-size: 26px;
-    color: #2AB967;
-}
-#work
-{
-    font-size: 20px;
-    color: white;
-}
-.search
-{
-    position: absolute;
-    top: 700px;
-    left:10%;
-}
-.fa-search{display: none;}
-#text-support
-{
-    width: 200px;
-    border-style: none;
-    height: 35px;
-    background-color: rgb(255,255,255,0.6);
-    padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-top: 2px;
-    font-size: 17px;
-}
-#btn-support
-{
-    height: 41px;
-    width: 75px;
-    border: none;
-    font-size: 17px;
-    text-transform: uppercase;
-    color: white;
-    background-color: #2AB967;
-    /* box-shadow: black 1px 1px 3px; */
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    
-}
+    mat-card span{font-size: 25px}
 
+.footer-500
+{
+    background-color: #FAFAFA;
+    border-top:1px solid #E5E5E5;
+    padding-top:1pc;
+    padding-bottom: 2pc;
+}
+mat-expansion-panel{background-color: #FAFAFA}
+footer{display: none;}	
 }
 @media (max-width:430px) and (min-width:410px) {
     header
     {
-        background: url("/assets/images/machine375.png");
+        background-image: url(/assets/images/alexander-andrews-290794-unsplash.jpg);
         width: 100%;
         height: 530px;
         background-size: cover;
         background-position: center center;
 
 
-    }    
-    .navbar-brand{margin-right: 0px}     
-
-    #sign{margin-bottom: 10px;margin-left: 0px}
-        #join{margin-left: 0px}
-    .segment
+    }  
+    .search
+     {
+         width:15pc;
+    }
+    .support{margin-left: 43.2%}
+    .support-two
     {
-        background-color: #2AB967;
-        height: 100px;
+        width: 5pc;
+        margin-left: 0px;display: none;
+    }  
+    .side-btn{border: none;background-color: transparent}
+    .side-btn i
+    {
         color:white;
-    }
-    .text-img
-    {
-        position: absolute;
-        top: 500px;
-        left:80px;
-        
-     /* color: white;    */
-    }
+    }   
     .text-imgone
     {
-        font-size: 35px;
+        font-size: 45px;
+        position: absolute;
+        top: 200px;
+        left:8.5%;
     }
     .text-imgtwo
     {
-        font-size: 25px;
+        font-size: 20px;
+        position: absolute;
+        top: 260px;
+        left:28.9%;
     }
-    hr
+    .segment
     {
-        display: none
+        color:white;
     }
     #text-one
-    {
-        display: none;
+    { 
+        width: 75%;
+        border-style: none;
+        height: 30px;
+        background-color: white;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: 2px;
+        font-size: 17px;
     }
-    .text-search{display: none}
+    .search-all
+    {
+        position: absolute;
+        top: 70%;
+        left:0%;display: none;
+    }
+    
+    .search-all .fa-search{color: white;}
     #btn-one
     {
-        display: none;
-        
+        height: 30px;
+        width: 100px;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #2AB967;
+        box-shadow: black 1px 1px 3px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
         
     }
-    main
-            {
-                height: 100vh;width:100%;
-                background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-                background-size: cover;
-                background-attachment: fixed;
-            }
-#abt{
-font-size: 26px;
-color: white;
+    mat-card span{font-size: 25px}
 
-}
-#bet
+    .footer-500
 {
-font-size: 26px;
-color: #2AB967;
+    background-color: #FAFAFA;
+    border-top:1px solid #E5E5E5;
+    padding-top:1pc;
+    padding-bottom: 2pc;
 }
-#work
-{
-font-size: 20px;
-color: white;
+mat-expansion-panel{background-color: #FAFAFA}
+footer{display: none;}	
 }
-.search
-{
-position: absolute;
-top: 700px;
-left:10%;
-}
-.fa-search{display: none;}
-#text-support
-{
-width: 200px;
-border-style: none;
-height: 35px;
-background-color: rgb(255,255,255,0.6);
-padding: 20px;
-border-top-left-radius: 30px;
-border-bottom-left-radius: 30px;
-margin-top: 2px;
-font-size: 17px;
-}
-#btn-support
-{
-height: 41px;
-width: 75px;
-border: none;
-font-size: 17px;
-text-transform: uppercase;
-color: white;
-background-color: #2AB967;
-/* box-shadow: black 1px 1px 3px; */
-border-bottom-right-radius: 30px;
-border-top-right-radius: 30px;
-
-}
-}
-
 @media (max-width: 770px) and (min-width:760px) {
     header
     {
-        background: url("/assets/images/machine768.png");
+        background-image: url('/assets/images/alexander-andrews-290794-unsplash.jpg');
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -518,110 +476,80 @@ border-top-right-radius: 30px;
 
 
     }
-    .navbar-brand{margin-right: 90px}  
-#sign:hover{
-    background-color: rgb(255,255,255,0.4);
-    border: none;
-    color:#2AB967;
-    margin-left: 20px;
-    
-}
-   
-    .segment
-    {
-        background-color: #2AB967;
-        color:white;
-    }
-    .text-img
-    {
-        position: absolute;
-        top: 150px;
-        left:35px;
-        
-    }
-    .text-imgone
-    {
-        font-size: 35px;
-    }
-    .text-imgtwo
-    {
-        font-size: 25px;
-    }
-    #text-one
-    {
-        width:200px
-    }
-    #btn-one
-    {
-       position: absolute;
-       top:125px;left:200px;
-       width:100px;
-    }
-    .fa-search{display: none;}       
-    main
-            {
-                height: 1024px;
-                width:100%;
-                background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-                background-size: cover;
-                background-attachment: fixed;
-            }
-#abt{
-font-size: 26px;
-color: white;
-
-}
-#bet
+    .link{margin-left: 15pc;}
+    .side-btn{border: none;background-color: transparent}
+.side-btn i
 {
-font-size: 26px;
-color: #2AB967;
-}
-#work
+    color:white;
+}   
+.text-imgone
 {
-font-size: 20px;
-color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 200px;
+    left:27%;
+}
+.text-imgtwo
+{
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    left:38.4%;
+}
+.segment
+{
+    color:white;
+}
+#text-one
+{ 
+    width: 75%;
+    border-style: none;
+    height: 40px;
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 2px;
+    font-size: 17px;
 }
 .search
+     {
+         width:35pc;
+    }
+    .support{margin-left: 43.2%}
+    .support-two
+    {
+        font-size: 18px;
+        margin-left:25.68%;
+    }
+.search-all
 {
-position: absolute;
-top: 700px;
-left:10%;
+    position: absolute;
+    top: 40%;
+    left:20%;display: none
 }
-.fa-search{display: none;}
-#text-support
+.search-all .fa-search{color: white;}
+#btn-one
 {
-width: 400px;
-border-style: none;
-height: 35px;
-background-color: rgb(255,255,255,0.6);
-padding: 20px;
-border-top-left-radius: 30px;
-border-bottom-left-radius: 30px;
-margin-top: 2px;
-font-size: 17px;
-}
-#btn-support
-{
-height: 41px;
-width: 110px;
-border: none;
-font-size: 17px;
-text-transform: uppercase;
-color: white;
-background-color: #2AB967;
-/* box-shadow: black 1px 1px 3px; */
-border-bottom-right-radius: 30px;
-border-top-right-radius: 30px;
-
-}
-
+    height: 40px;
+    width: 100px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2AB967;
+    box-shadow: black 1px 1px 3px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}   
+ mat-card span{font-size: 30px}   
+.footer-500{display: none}    
 }
 @media (max-width:1030px) and (min-width:992px) 
 {
-    .navbar-brand{margin-right: 250px}     
     header
     {
-        background: url("/assets/images/machine1024.png");
+        background-image: url('/assets/images/alexander-andrews-290794-unsplash.jpg');
         width: 100%;
         height: 530px;
         background-size: cover;
@@ -629,100 +557,77 @@ border-top-right-radius: 30px;
 
 
     }
-    #sign{margin-left: 150px;}
-    .one
-    {
-        position:absolute;
-        top:120px;
-        left:560px;;
-        height:350px;
+    .search
+     {
+         width:51pc;
     }
-    .segment
+    .support{margin-left: 44.9%}
+    .support-two
     {
-        background-color: #2AB967;
-        height: 0px;
+        font-size: 20px;
+        margin-left:31.76%;
+    }
+    .side-btn{border: none;background-color: transparent}
+    .side-btn i
+    {
         color:white;
     }
-    .fa-search{display: none;}       
-    .text-img
+    .link
     {
-        position: absolute;
-        top: 150px;
-        left:35px;
-        
-     /* color: white;  */ 
+        margin-left: 30pc
     }
+
     .text-imgone
     {
-        font-size: 35px;
+        font-size: 45px;
+        position: absolute;
+        top: 200px;
+        left:32.8%;
     }
     .text-imgtwo
     {
-        font-size: 25px;
+        font-size: 20px;
+        position: absolute;
+        top: 250px;
+        left:41.3%;
     }
+    .segment
+    {
+        color:white;
+    }
+    
+    #text-one
+    { 
+        width: 75%;
+        border-style: none;
+        height: 40px;
+        background-color: white;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: 2px;
+        font-size: 17px;
+    }
+    .search-all
+    {
+        position: absolute;
+        top: 40%;
+        left:20%;display: none
+    }
+    .search-all .fa-search{color: white;}
     #btn-one
     {
-      position: absolute;
-      top:125px;
-      width:100px;       
-        
-    }
-   
-    main
-            {
-               
-                height: 100vh;
-                width:100%;
-                background-image: url("/assets/images/fancycrave-254180-unsplash.jpg");
-                background-size: cover;
-                background-attachment: fixed;
-            }
-#abt{
-font-size: 26px;
-color: white;
-
-}
-#bet
-{
-font-size: 26px;
-color: #2AB967;
-}
-#work
-{
-font-size: 20px;
-color: white;
-}
-.search
-{
-position: absolute;
-top: 700px;
-left:25%;
-}
-.fa-search{display: none;}
-#text-support
-{
-width: 400px;
-border-style: none;
-height: 35px;
-background-color: rgb(255,255,255,0.6);
-padding: 20px;
-border-top-left-radius: 30px;
-border-bottom-left-radius: 30px;
-margin-top: 2px;
-font-size: 17px;
-}
-#btn-support
-{
-height: 41px;
-width: 110px;
-border: none;
-font-size: 17px;
-text-transform: uppercase;
-color: white;
-background-color: #2AB967;
-/* box-shadow: black 1px 1px 3px; */
-border-bottom-right-radius: 30px;
-border-top-right-radius: 30px;
-
-}
-}
+        height: 40px;
+        width: 100px;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #2AB967;
+        box-shadow: black 1px 1px 3px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;     
+    }  
+ mat-card span{font-size: 30px}
+    
+.footer-500{display: none}    
+} 
