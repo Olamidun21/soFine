@@ -1,3 +1,126 @@
+.container{
+    margin-top: 80px;
+    max-width: 80% !important;
+    padding-bottom: 70px !important;
+}
+.row .request{
+    align-items: center;
+    background-color: #D3D2D0;
+    background-origin: padding-box;
+    padding: 5px;
+}
+.request .btn{
+    text-align: center;
+    padding-top: 12px;
+    margin-left: 6pc;
+}
+.request h3{
+    text-align: center;
+    padding-top: 15px;
+}
+.request p{
+ text-align: center;
+ padding-top: 10px;
+}
+.carousel-item{
+    /* width:100vw; */
+    height: 250px;
+}
+.header1{
+    border-bottom:3px solid rgb(89, 223, 89);
+    width:100%;
+    /* height: 10px; */
+    margin-top: 30px;
+    padding-bottom:2px !important;
+    padding-left: 0px;
+    float: left;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.header1 h1{
+    font-size: 30px;
+    float: left;
+    text-align: left;
+}
+r2 {
+    padding-left: 0px;
+    margin: 0px;
+}
+.card1 {
+    max-width: 250px;
+    padding-top: 2% !important;
+    margin-bottom: 12px;
+    
+}
+
+/* .mat-card-header{
+    padding-bottom: -20px;
+} */
+
+.mat-card-title{
+    padding-top: 7% !important;
+    font-size: 17px;
+    font-weight:bold;
+}
+
+.header-image {
+    background-image: url('/assets/images/categories/denim1.jpg');
+    background-size: cover;
+    padding-bottom: -50px !important;
+}
+
+.mat-card img{
+    max-height: 200px;
+    height:180px;
+    margin-top: 0;
+}
+
+.mat-card-content h5{
+    margin-top: -8px;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 5px;
+}
+
+.mat-card-content h6{
+    font-size:14px;
+    margin-right:-20px;
+    margin-left:-10px;
+}
+
+i{
+    font-size: 32px;
+    margin-left:2%;
+    color: black;
+}
+
+i:hover{
+    color: red;
+}
+
+.mat-card button{
+margin-right: 2%;
+}
+
+.star span{
+    font-size:15px;
+    max-width: 10px;
+    display: inherit;
+
+}
+
+.mat-card-actions{
+    padding: 0;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -25px;
+}
+
+/* .mat-card-actions span.likes{
+    padding-bottom:50px !important;
+    margin-left: 10px;
+} */
+    
 .popular
 {
     width:33%;

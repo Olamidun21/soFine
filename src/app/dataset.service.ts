@@ -8,27 +8,26 @@ import { Details } from './details';
 })
 export class DatasetService {
 
-LOGINS = [
-  {fullname: "Olarinde Delight", description:"", language:"Yoruba", country:"Nigeria", state:"oyo state", city:"lalupon", username:"ddd", category:"hair dresser", email: "delightolarinde@gmail.com", password:"delight"},
-  {fullname: "AY", description:"", language:"Eng", country:"Ghana", state:"Accra", city:"Langibo", username:"aylala ", category:"Designer", email: "ayolala@gmail.com", password:"ayolala"}
-]; 
-
+  public users = [
+    {fullname: 'Samuel ',gender: 'Male',country: 'Nigeria',state: 'Oyo',address: 'Parrot',phone: '07064196171',email: 'sam@yahoo.com',username: 'Sammy',password: 'sam',category: 'Designer',company: 'Joytune',companyAdd: 'sqi'},
+    {fullname: 'Lala Ayoade',gender: 'Male',country: 'Nigeria',state: 'Oyo',address: 'Parrot',phone: '07064196171',email: 'ayoadelala@yahoo.com',username: 'ayolala',password: 'ayolala',category: 'Designer',company: 'Joytune',companyAdd: 'sqi'},
+    {fullname: 'Delight Olarinde',gender: 'Female',country: 'Nigeria',state: 'Oyo',address: 'Parrot',phone: '07064196171',email: 'delight@yahoo.com',username: 'delight',password: 'delight',category: 'Designer',company: 'Joytune',companyAdd: 'sqi'},
+  ]
   constructor() { }
 
   
 
-  sendSubmit(regData){
-    this.LOGINS.push(regData);
-    console.log(this.LOGINS);
-    // return of(this.LOGINS);
+  sendSubmit(data){
+    this.users.push(data);
+    return this.users;
   }
-  processLogin() {
-    return (this.LOGINS);
-  }
+  // processLogin() {
+  //   return (this.users);
+  // }
 
-  getUser(){
+  // getUser(){
 
-  }
+  // }
 
   
 

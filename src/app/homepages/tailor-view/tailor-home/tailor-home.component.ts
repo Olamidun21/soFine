@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DatasetService } from 'src/app/dataset.service';
+import { DatasetService } from 'c:/users/user/sofine/src/app/dataset.service';
 
 
 @Component({

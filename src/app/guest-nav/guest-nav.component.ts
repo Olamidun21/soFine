@@ -10,6 +10,8 @@ export class GuestNavComponent implements OnInit {
   abt = false;
   pol = false;
   supp = false;
+  login= false;
+  reg = false;
 
   constructor() { }
 
@@ -20,7 +22,9 @@ export class GuestNavComponent implements OnInit {
     var view = (show == 'home')?this.guest=true:this.guest=false;
     var view = (show == 'about')?this.abt=true:this.abt=false;
     var view = (show == 'policy')?this.pol=true:this.pol=false;
-    var view = (show == 'support')?this.supp=true:this.supp=false;    
+    var view = (show == 'support')?this.supp=true:this.supp=false;
+    var view = (show == 'login')?this.login=true:this.login=false;
+    var view = (show == 'register')?this.reg=true:this.reg=false;    
   }
 
 }

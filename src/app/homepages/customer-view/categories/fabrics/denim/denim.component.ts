@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,21 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./denim.component.css']
 })
 export class DenimComponent implements OnInit {
-  // fabrics = false;
-  // denim = true;
-  // categories = false;
-  // dashboard = false;
+  denim = true;
+  denim1 = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  menu(take) { 
-    // var result = (take=='denim')?this.denim=true:this.denim=false;
-    // var result = (take=='fabrics')?this.fabrics=true:this.fabrics=false;
-    // var result = (take=='categories')?this.categories=true:this.categories=false;
-    // var result = (take=='dashboard')?this.dashboard=true:this.dashboard=false;
+  buy(take) { 
+    var result = (take=='denim')?this.denim=true:this.denim=false;
+    var result = (take=='denim1')?this.denim1=true:this.denim1=false;
   }
 
 }

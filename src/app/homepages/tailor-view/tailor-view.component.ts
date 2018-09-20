@@ -12,7 +12,11 @@ export class TailorViewComponent implements OnInit {
    client = false;
    services = false;
    profile = false;
+   notifications = false;
+   inbox = false;
+   setting = false;
    dashboardsupport = false;
+
 
   constructor() { }
 
@@ -27,6 +31,9 @@ export class TailorViewComponent implements OnInit {
     var result = (take == 'myclients')?this.client=true:this.client=false;
     var result = (take == 'myservices')?this.services=true:this.services=false;
     var result = (take == 'myprofile')?this.profile=true:this.profile=false;
+    var result = (take == 'myinbox')?this.inbox=true:this.inbox=false;
+    var result = (take == 'mynotifi')?this.notifications=true:this.notifications=false;
+    var result = (take == 'mysetting')?this.setting=true:this.setting=false;
     var result = (take == 'mysupport')?this.dashboardsupport=true:this.dashboardsupport=false;
   }
 

@@ -1,86 +1,3 @@
-<!-- 
-<body>
-  <nav class="navbar navbar-dark navbar-custom navbar-expand-sm fixed-top" style="background-color:#2AB967;height:12vh">
-    <button type="button" mat-raised-button (click)="drawer.toggle()" color="accent">
-        <i class="fa fa-bars"></i>
-      </button>
-  </nav>
-<div class="grid-container mt-5">
-    
-  <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <mat-card style="width:1100px">
-          <li class="fa fa-user"></li>
-      <p>Hi,DISPLAY NAME</p>
-      
-     <p><i class="fa fa-home"> HOME</i></p>
-      <p><i class="fa fa-inbox"> INBOX</i></p>
-    <p><i class="fa fa-bell"> NOTIFICATION</i></p>
-    
-           <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-    <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
-      <button mat-icon-button disabled></button>
-      {{node.filename}} : {{node.type}}
-    </mat-tree-node>
-  
-    <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
-      <button mat-icon-button matTreeNodeToggle
-              [attr.aria-label]="'toggle ' + node.filename">
-        <mat-icon class="mat-icon-rtl-mirror">
-          {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
-        </mat-icon>
-      </button>
-      {{node.filename}} : {{node.type}}
-    </mat-tree-node>
-  </mat-tree> -->
-
-    <!-- <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false" class="expand">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-                <i class="fa fa-tag">CATEGORIES</i>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p><i><a href="#">Tailors</a></i></p>
-          <p><i><a href="#">Designers</a></i></p>
-          <p><i><a href="#">Custmizers</a></i></p>
-          <p><i><a href="#">Facilities</a></i></p>
-          <p><i><a href="#">Sellers</a></i></p>
-        </mat-expansion-panel>
-      </mat-accordion> -->
-
-      <!-- <mat-accordion>
-          <mat-expansion-panel (opened)="panelOpenState = true"
-                               (closed)="panelOpenState = false" class="expand">
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <i class="fa fa-scissors">TAILOR</i>
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p><i><a href="#">Nature</a></i></p>
-            <p><i><a href="#">Site</a></i></p>
-            <p><i><a href="#">Cap</a></i></p>
-            <p><i><a href="#">Designer</a></i></p>
-            <p><i><a href="#">Causal</a></i></p>
-            <p><i><a href="#">Coperate</a></i></p>
-            <p><i><a href="#">Custmizer</a></i></p>
-          </mat-expansion-panel>
-        </mat-accordion> -->
-<!-- 
-      <p><i class="fa fa-users"> MAKE SPECIAL REQUEST</i></p>
-      <p><i class="fa fa-handshake"> SUPPORT</i></p>
-     <p><i class="fa fa-eye"> VIEW AS</i></p>
-     <p><i class="fa fa-lightbulb">ONLINE STATUS</i><mat-slide-toggle></mat-slide-toggle></p>
-     <p><i class="fa fa-gear"> SETTINGS</i></p>    
-     </mat-card>
-    </mat-drawer>
-  </mat-drawer-container>
-</div>
-</body> -->
-
-
-
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav
     #drawer
@@ -88,51 +5,19 @@
     fixedInViewport="true"
     [attr.role]="isHandset ? 'dialog' : 'navigation'"
     [mode]="(isHandset | async)!.matches">
-    <mat-toolbar class="beta" style="height:20vh"><img src="src/images/male.png" class="img-fluid rounded-circle"><h2>Hi,GUEST</h2></mat-toolbar>
+    <mat-toolbar class="beta" style="height:20vh"><img src="src/images/male.png" class="img-fluid rounded-circle"><a (click)="menu('mprofile')"><h2>Hi,GUEST</h2></a></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item (click)="menu('dashboard')"><mat-icon aria-label="Side nav toggle icon">home</mat-icon>HOME</a>
-      <a mat-list-item routerLink="/inbox"><mat-icon aria-label="Side nav toggle icon">mail</mat-icon>INBOX</a>
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">notifications_active</mat-icon>NOTIFICATION</a>
-      <a mat-list-item href="#">ONLINE STATUS <mat-slide-toggle></mat-slide-toggle></a><hr>
-      <a mat-list-item (click)="menu('categories')">
-        <!-- <mat-expansion-panel (opened)="panelOpenState = true"> -->
-                             <!-- (closed)="panelOpenState = false" class="expand"> -->
-          <!-- <mat-expansion-panel-header>
-            <mat-panel-title> -->
-                 <mat-icon aria-label="Side nav toggle icon">label</mat-icon> CATEGORIES
-            <!-- </mat-panel-title>
-          </mat-expansion-panel-header> -->
-          <!-- <p><i><a href="#">Tailors</a></i></p>
-          <p><i><a href="#">Designers</a></i></p>
-          <p><i><a href="#">Custmizers</a></i></p>
-          <p><i><a href="#">Facilities</a></i></p>
-          <p><i><a href="#">Sellers</a></i></p> -->
-        <!-- </mat-expansion-panel> -->
-      </a><hr />
-        
-      
-      <!-- <i><a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">label</mat-icon>CATEGORIES</a></i> -->
-      <!-- <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false" class="expand">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-                <mat-icon aria-label="Side nav toggle icon"></mat-icon>TAILOR
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p><i><a href="#">Nature</a></i></p>
-          <p><i><a href="#">Site</a></i></p>
-          <p><i><a href="#">Cap</a></i></p>
-          <p><i><a href="#">Designer</a></i></p>
-          <p><i><a href="#">Causal</a></i></p>
-          <p><i><a href="#">Coperate</a></i></p>
-          <p><i><a href="#">Custmizer</a></i></p>
-        </mat-expansion-panel><hr> -->
-      <!-- <i><a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>TAILOR</a></i> -->
+      <a mat-list-item (click)="menu('myinbox')"><mat-icon aria-label="Side nav toggle icon">mail</mat-icon>INBOX</a>
+      <a mat-list-item (click)="menu('mynotifi')"> <mat-icon aria-label="Side nav toggle icon">notifications_active</mat-icon>NOTIFICATION</a>
+      <a mat-list-item >ONLINE STATUS <mat-slide-toggle></mat-slide-toggle></a><hr>
+      <a mat-list-item (click)="menu('categories')"><mat-icon aria-label="Side nav toggle icon">label</mat-icon> CATEGORIES </a><hr />
+    
       <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon"></mat-icon>SPECAIL REQUEST</a>
-      <a mat-list-item routerLink="/support"> <mat-icon aria-label="Side nav toggle icon">support</mat-icon>SUPPORT</a>
+      <a mat-list-item (click)="menu('mysupport')"> <mat-icon aria-label="Side nav toggle icon">support</mat-icon>SUPPORT</a>
       <a mat-list-item routerLink="/tailor"> <mat-icon aria-label="Side nav toggle icon">swap_horizontal_circle</mat-icon>VIEW AS TAILOR</a>
-      
-      <a mat-list-item href="#"> <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>SETTINGS</a><hr>
+      <a mat-list-item (click)="menu('myprofile')"> <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>PROFILE</a><hr>
+      <a mat-list-item (click)="menu('myset')"> <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>SETTINGS</a><hr>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content >
@@ -154,30 +39,20 @@
     <div *ngIf="categories">
       <app-categories></app-categories>     
     </div>
+    <div *ngIf="profile">
+      <app-profile></app-profile>
+    </div>
+    <div *ngIf="dashboardsupport">
+      <app-dashboard-support></app-dashboard-support>
+    </div>
+    <div *ngIf="inbox">
+      <app-inbox></app-inbox>
+    </div>
+    <div *ngIf="setting">
+      <app-settings></app-settings>
+    </div>
+    <div *ngIf="notifications">
+      <app-notification></app-notification>
+    </div>
   </mat-sidenav-content>
   </mat-sidenav-container>
-
-  <!-- <div class="grid-container">  
-  <h1 class="mat-h1">Dashboard</h1>  
-  <mat-grid-list cols="2" rowHeight="350px">  
-    <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">  
-      <mat-card class="dashboard-card">  
-        <mat-card-header>  
-          <mat-card-title>  
-            {{card.title}}  
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">  
-              <mat-icon>click</mat-icon>  
-            </button>  
-            <mat-menu #menu="matMenu" xPosition="before">  
-              <button mat-menu-item>Expand</button>  
-              <button mat-menu-item>Remove</button>  
-            </mat-menu>  
-          </mat-card-title>  
-        </mat-card-header>  
-        <mat-card-content class="dashboard-card-content">  
-          <div>BETA Content Here</div>  
-        </mat-card-content>  
-      </mat-card>  
-    </mat-grid-tile>  
-  </mat-grid-list>  
-</div> -->

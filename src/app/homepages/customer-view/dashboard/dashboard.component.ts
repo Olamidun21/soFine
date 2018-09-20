@@ -14,6 +14,11 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 export class DashboardComponent implements OnInit {
   dashboard = true;
   categories = false;
+  profile = false;
+  notifications = false;
+  inbox = false;
+  setting = false;
+   dashboardsupport = false;
  
       isHandset: Observable<BreakpointState> =this.breakpointObserver.observe(Breakpoints.Handset);
   // cards = [  
@@ -31,6 +36,11 @@ export class DashboardComponent implements OnInit {
   menu(take) { 
     var result = (take=='dashboard')?this.dashboard=true:this.dashboard=false;
     var result = (take=='categories')?this.categories=true:this.categories=false;
+    var result = (take == 'myprofile')?this.profile=true:this.profile=false;
+    var result = (take == 'myinbox')?this.inbox=true:this.inbox=false;
+    var result = (take == 'mynotifi')?this.notifications=true:this.notifications=false;
+    var result = (take == 'mysupport')?this.dashboardsupport=true:this.dashboardsupport=false;
+    var result = (take == 'myset')?this.setting=true:this.setting=false;
   }
 
 }

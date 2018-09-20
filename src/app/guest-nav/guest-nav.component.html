@@ -29,8 +29,8 @@
           <a href="#" (click)="side('about')" class="navlink link">About</a>
           <a href="#" (click)="side('policy')" class="navlink">Policy</a>
           <a href="#" (click)="side('support')" class="navlink">Support</a>
-          <a href="#" routerLink="/login" class="navlink">Sign In</a>
-          <a href="#" routerLink="/reg" id="joinlink"><button class="btn-join">Join</button> </a>       
+          <a href="#" (click)="side('login')" class="navlink">Sign In</a>
+          <a href="#" (click)="side('register')" id="joinlink"><button class="btn-join">Join</button> </a>       
         </mat-toolbar>
         <div *ngIf="guest">
             <app-guest-dash></app-guest-dash>
@@ -43,6 +43,12 @@
         </div>
         <div *ngIf="supp">
           <app-support></app-support>
+        </div>
+        <div *ngIf="login">
+          <app-login></app-login>
+        </div>
+        <div *ngIf="reg">
+          <app-reg></app-reg>
         </div>
               
        

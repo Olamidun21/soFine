@@ -6,15 +6,16 @@
         <mat-nav-list>
             <span><img src="src/assets/images/male.png" class="img-fluid rounded-circle"><br><b>corlard3y</b></span> <hr>    
           <a mat-list-item  (click)="menu('home')">Home</a>
-          <a mat-list-item href="#">Inbox</a>
-          <a mat-list-item href="#">Notifications</a>
-          <a mat-list-item href="#">Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
+          <a mat-list-item (click)="menu('myinbox')">Inbox</a>
+          <a mat-list-item (click)="menu('mynotifi')">Notifications</a>
+          <a mat-list-item >Online Status<mat-slide-toggle></mat-slide-toggle> </a> <hr>
           <a mat-list-item (click)="menu('managejobs')">Manage Jobs</a>
           <a mat-list-item (click)="menu('myclients')">My Clients</a>
           <a mat-list-item (click)="menu('myearnings')">My Earnings</a>
           <a mat-list-item (click)="menu('myservices')">My Services</a><hr>
           <a mat-list-item (click)="menu('myprofile')">My profile</a> 
           <a mat-list-item (click)="menu('mysupport')">Support</a>
+          <a mat-list-item (click)="menu('mysetting')">Settings</a>
           <a mat-list-item routerLink="/dashboard">View as Client</a>
           <a mat-list-item href="">Logout</a>    
         </mat-nav-list>
@@ -45,11 +46,20 @@
         <div *ngIf="services">
           <app-my-services></app-my-services>
         </div>
+        <div *ngIf="setting">
+          <app-settings></app-settings>
+        </div>
         <div *ngIf="profile">
           <app-profile></app-profile>
         </div>
         <div *ngIf="dashboardsupport">
           <app-dashboard-support></app-dashboard-support>
+        </div>
+        <div *ngIf="inbox">
+          <app-inbox></app-inbox>
+        </div>
+        <div *ngIf="notifications">
+          <app-notification></app-notification>
         </div>
       </mat-sidenav-content>
       </mat-sidenav-container>

@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="denim" class="container">
   <div class="row">
     <div class="header header1">
       <span><a (click)="menu('dashboard')">Home</a> > </span><span><a (click)="menu('categories')">Categories</a></span> > <span><a (click)="menu('fabrics')">Fabrics</a></span> > <span ><a (click)="menu('denim')">Denim</a></span>
@@ -23,7 +23,7 @@
         <mat-card-actions>
           <div>
             <a href=""><span><i class="material-icons">favorite</i></span></a>
-            <button class="btn btn-success btn-sm pull-right">N1000</button>
+            <button  (click)="buy('denim1')" class="btn btn-success btn-sm pull-right">N1000</button>
             </div>
         </mat-card-actions>
       </mat-card>
@@ -164,6 +164,10 @@
                 </mat-card-actions>
               </mat-card>
             </div>
+</div>
+
+<div *ngIf="denim1">
+    <app-productD></app-productD>     
 </div>
 
 <!-- <div *ngIf="dashboard">

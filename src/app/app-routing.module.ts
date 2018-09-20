@@ -30,6 +30,7 @@ import { DashboardhomeComponent } from './homepages/customer-view/dashboard/dash
 import { CategoriesComponent } from './homepages/customer-view/categories/categories.component';
 import { FabricsComponent } from './homepages/customer-view/categories/fabrics/fabrics.component';
 import { DenimComponent } from './homepages/customer-view/categories/fabrics/denim/denim.component';
+import { ProductDescriptionComponent } from './homepages/customer-view/product-description/product-description.component';
 
 const appRoutes:Routes = [
   {
@@ -124,6 +125,10 @@ const appRoutes:Routes = [
   {
     path:'denim',
      component:DenimComponent
+  },
+  {
+    path:'product-description',
+     component:ProductDescriptionComponent
   },
 ]
 

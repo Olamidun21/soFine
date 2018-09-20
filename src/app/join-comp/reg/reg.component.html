@@ -1,79 +1,89 @@
-<nav class="navbar navbar-dark navbar-custom navbar-expand-sm fixed-top" style="background-color:#2AB967;height:12vh">
-    <div class="container-fluid">
-      <a href="" class="nav-link"><i class="fa fa-arrow-circle-left fa-2x" style="color:aliceblue"></i></a>
-      <a href="" class="navbar-brand" style="font-size:55px;"><div>Beta</div></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#me">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse offset-4" id="me">
-               
-        </div>
-    </div>
-  </nav>
-
   
-    
     <div class="container" style="margin-top:130px">
         <mat-card>
       <button mat-raised-button (click)="isEditable = !isEditable">
           {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
         </button>
         <mat-horizontal-stepper linear #stepper>
-            <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
-    <form>
-        
-        <ng-template matStepLabel>Create An Account</ng-template>
+
+  <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+    <form (submit)="submitForm($event)">        
+        <ng-template matStepLabel>Personal Information</ng-template>
         <mat-form-field>
-          <input matInput placeholder="Display Name" required name="displayname"[(ngModel)]="displayname">
+          <input matInput placeholder="Fullname" required name="fullname" id="Fullname" >
         </mat-form-field><br>
         <mat-form-field>
-            <input matInput placeholder="Email" required name="email"[(ngModel)]="email">
+            <input matInput placeholder="Gender" required name="gender" id="gender">
           </mat-form-field><br>
-        <mat-form-field>
-            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required name="password"[(ngModel)]="password">
-            <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+          <mat-form-field>
+            <input matInput placeholder="Country" required name="country" id="country">
           </mat-form-field><br>
-      
-          <!-- <mat-form-field>
-              <input matInput placeholder="Region"  required name="region"[(ngModel)]="region">
-            </mat-form-field><br>
-            <mat-form-field>
-                <input matInput placeholder="Address"  required name="address"[(ngModel)]="address">
-              </mat-form-field><br> -->
+          <mat-form-field>
+            <input matInput placeholder="State" required name="state" id="state">
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Address" required name="address" id="address">
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Phone" required name="phone" id="phone">
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Email" required name="email" id="email">
+          </mat-form-field><br>
 
           <div>
               <button mat-raised-button matStepperNext>Next</button>
             </div>
+
     </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
-      <form>
-          <ng-template matStepLabel>Personal Info</ng-template>
+      <form (submit)="submitForm($event)">
+          <ng-template matStepLabel>Account Information</ng-template>
         <mat-form-field >
-            <input matInput placeholder="First name"  required name="frist"[(ngModel)]="frist">
+            <input matInput placeholder="User Name"  required name="user" id="user">
           </mat-form-field><br>
           <mat-form-field>
-              <input matInput placeholder="Last name"  required name="last"[(ngModel)]="last">
-            </mat-form-field><br>
-            <mat-form-field>
-                <input matInput placeholder="Country name"  required name="country"[(ngModel)]="country">
-              </mat-form-field><br>
-              <mat-form-field>
-                  <input matInput placeholder="State"  required name="state"[(ngModel)]="state">
-                </mat-form-field>
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required name="password" id="password">
+            <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Confirm Password" [type]="hide ? 'password' : 'text'" required name="password" id="password">
+            <mat-icon matSuffix (click)="hide = '!hide'">{{hide ? 'visibility': 'visibility_off'}}</mat-icon>
+          </mat-form-field><br>
           <div>
             <button mat-raised-button matStepperPrevious>Back</button>&nbsp;&nbsp;
-            <button mat-raised-button matStepperNext (click)="firstSubmit()" >Next</button>
+            <button mat-raised-button matStepperNext>Next</button>
           </div>
       </form>
     </mat-step>
-
+<mat-step [stepControl]="thirdFormGroup" [editable]="isEditable">
+  <form (submit)="submitForm($event)">
+      <ng-template matStepLabel>Professional Information</ng-template>
+    <mat-form-field >
+        <input matInput placeholder="Category"  required name="catergory" id="catergory">
+      </mat-form-field><br>
+      <mat-form-field >
+          <input matInput placeholder="Company Name "  required name="Company Name" id="company">
+        </mat-form-field><br>
+        <mat-form-field >
+            <input matInput placeholder="Company Address"  required name="Company Address" id="CompanyAdd">
+          </mat-form-field><br>
+      <mat-form-field >
+          <input matInput placeholder="Details"  required name="Details" id="Details">
+        </mat-form-field><br>
+      <div>
+        <button mat-raised-button matStepperPrevious>Back</button>&nbsp;&nbsp;
+        <button mat-raised-button matStepperNext type="submit" >Next</button>
+      </div>
+  </form>
+</mat-step>
     <mat-step>
         <ng-template matStepLabel>Done</ng-template>
         You are now done.
         <div>
           <button mat-raised-button matStepperPrevious>Back</button>&nbsp;
-          <button mat-raised-button (click)="stepper.Submit()">submit</button>
+          <button mat-raised-button type="submit">submit</button>
         </div>
       </mat-step>
   </mat-horizontal-stepper>
